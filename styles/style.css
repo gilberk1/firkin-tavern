@@ -1,0 +1,285 @@
+/* Desktop */
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+*/
+html {
+    height: 100%;
+}
+
+body {
+	display: flex;
+	background-color: #2D2F31;
+	flex-direction: column;
+	font-family: Helvetica;
+	height: 100%;
+	margin:0;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+	height: 190px;
+	position: relative;
+}
+
+.logo {
+	display: block;
+	margin:0;
+	float: left;
+	transition: .3s ease-in-out;
+	width: 150px;
+	height: 167px;
+	padding-top: 11px;
+	padding-left: 70px;
+}
+
+/*.logo:hover {
+}
+*/
+.title {
+	display: block;
+	margin: 0;
+	float: right;
+	width: 714px;
+	height: 68px;
+	padding-top: 61px;
+	padding-right: 180px;
+}
+
+.navigation{
+	background-color: #2A5242;
+	width: 100%;
+	height: 72px;
+}
+
+.menu-icon {
+	display: none;
+}
+
+
+.nav {
+	display: inline-block;
+	float: left;
+	margin-left: 25px;
+}
+
+.nav a {
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	transition: .3s ease-in;
+}
+
+#home {
+	background-color: #2C3936;
+	color: #D2D50B
+}
+/*.nav a:visited {
+	color: #c4c4c4;
+}*/
+
+.nav a:hover {
+	background-color: #2C3936;
+	color: #D2D50B
+}
+
+.photo {
+	width: 100%;
+	height: 423px;
+	position: relative;
+}
+
+.body {
+	background-color: #EBEBEB;
+	box-shadow: inset 0 0 100px #000000;
+	position: relative;
+	transition: .2s ease-in;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.body:hover {
+	box-shadow:inset 0 0 40px #000000;
+}
+
+.body-content {
+	position: relative;
+	left: 50%;
+	text-align: center;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.footer {
+	background-color: #2D2F31;
+	width: 100%;
+	height: 100px;
+	position: relative;
+	margin-top: -22px;
+}
+
+.social {
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+	margin-right: 75px;
+}
+
+.social img {
+	display: block;
+	float: left;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: .3s ease-in;
+}
+
+#facebook:hover {
+	content: url('../images/Facebook_active.png');
+}
+
+#twitter:hover {
+	content: url('../images/Twitter_active.png');
+}
+
+#yelp:hover {
+	content: url('../images/Yelp_active.png');
+}
+
+.address, .contact {
+	display: block;
+	margin:0;
+	float: left;
+	width: 220px;
+	padding-top: 15px;
+	padding-left: 30px;
+	font-size: 14pt;
+	font-weight: bold;
+	color: white;
+}
+
+.email {
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.email img {
+	display: block;
+	float: left;
+	padding-top: 35px;
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: .3s ease-in;
+}
+
+#envelope:hover {
+	content: url('../images/Envelope_active.png');
+}
+
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.6;
+	opacity:.60;
+	filter: alpha(opacity=60);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 10px solid black;
+	background-color: #EBEBEB;
+	z-index:1002;
+	overflow: auto;
+}
+
+/* Tablet */
+
+@media (max-width:980px) {
+	.container {
+/*		width: 700px;
+*/	}
+}
+
+/* Mobile */
+
+@media (max-width: 742px) {
+	.container {
+/*		width: 90%;
+*/	}
+	.header {
+/*		max-height: 80px;
+		background-color: #597ea5;
+*/	}
+
+	.logo h1 {
+/*		color: #ffffff;
+		height: 50px;
+		width: 100%;
+		font-size: 42px;
+*/	}
+	.logo h1:hover {
+/*		font-size: 42px;
+*/	}
+	.menu-icon {
+/*		display: block;
+		float: right;
+		font-size: 36px;
+		color: #ffffff;
+		position: relative;
+		top: -47px;
+		cursor: pointer;
+*/	}
+	.nav {
+/*		display: block;
+		float: right;
+		margin-top: 10px;
+		position: relative;
+		background-color: #fff;
+		margin-right: -30px;
+		width: 40%;
+		opacity: 0;
+		z-index: 100;
+*/	}
+
+	.nav.shown {
+/*		opacity: 1;
+		z-index: 100;
+*/	}
+	.nav a {
+/*		float: none;
+		border-bottom: 1px solid gray;
+		margin: 0;
+		padding: 10px;
+*/	}
+	.body a.main-button {
+/*		font-size: 18px;
+*/	}
+
+}
