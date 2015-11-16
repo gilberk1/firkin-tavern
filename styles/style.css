@@ -7,10 +7,10 @@ html {
 }
 
 body {
-	display: flex;
-	background-color: #2D2F31;
-	flex-direction: column;
-	font-family: Helvetica;
+/*	display: flex;
+*/	background-image: url('../images/Wood.jpg');
+/*	flex-direction: column;
+*/	font-family: Helvetica;
 	height: 100%;
 	margin:0;
 	-webkit-font-smoothing: antialiased;
@@ -108,7 +108,7 @@ body {
 	position: relative;
 	transition: .2s ease-in;
 	width: 100%;
-	padding-top: 5px;
+	margin-top: 15px;
 }
 
 .body:hover {
@@ -116,20 +116,20 @@ body {
 }
 
 .body-content {
-	position: relative;
+	/*position: relative;
 	left: 50%;
 	text-align: center;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);*/
 }
 
 .footer {
-	background-color: #2D2F31;
-	width: 100%;
+/*	background-color: #2D2F31;
+*/	width: 100%;
 	height: 100px;
 	position: relative;
-	margin-top: -22px;
-}
+/*	margin-top: -22px;
+*/}
 
 .social {
 	display: inline-block;
