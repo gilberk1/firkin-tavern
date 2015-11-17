@@ -7,10 +7,8 @@ html {
 }
 
 body {
-/*	display: flex;
-*/	background-image: url('../images/Wood.jpg');
-/*	flex-direction: column;
-*/	font-family: Helvetica;
+	background-image: url('../images/Wood.jpg');
+	font-family: Helvetica;
 	height: 100%;
 	margin:0;
 	-webkit-font-smoothing: antialiased;
@@ -18,7 +16,7 @@ body {
 
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -92,26 +90,19 @@ body {
 
 .photo {
 	width: 100%;
-	height: 423px;
+	height: 468px;
 	position: relative;
 }
 
 .body {
 	background-color: #EBEBEB;
-	box-shadow: inset 0 0 80px #000000;
 	position: relative;
 	transition: .2s ease-in;
 	width: 100%;
-	margin-top: 15px;
-	padding-top: 5px;
-}
-
-.body:hover {
-	box-shadow:inset 0 0 30px #000000;
 }
 
 .body-content {
-	/*position: relative;
+/*	position: relative;
 	left: 50%;
 	text-align: center;
 	top: 50%;
@@ -119,8 +110,7 @@ body {
 }
 
 .footer {
-/*	background-color: #2D2F31;
-*/	width: 100%;
+	width: 100%;
 	height: 100px;
 	position: relative;
 	margin-top: -30px;
