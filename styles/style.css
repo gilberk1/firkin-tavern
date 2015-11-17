@@ -56,6 +56,7 @@ body {
 	background-color: #2A5242;
 	width: 100%;
 	height: 72px;
+	position: relative;
 }
 
 .menu-icon {
@@ -84,15 +85,12 @@ body {
 }
 
 #home {
-	background-color: #2C3936;
+	background-color: #4D2702;
 	color: #D2D50B
 }
-/*.nav a:visited {
-	color: #c4c4c4;
-}*/
 
 .nav a:hover {
-	background-color: #2C3936;
+	background-color: #553A1F;
 	color: #D2D50B
 }
 
@@ -104,7 +102,7 @@ body {
 
 .body {
 	background-color: #EBEBEB;
-	box-shadow: inset 0 0 100px #000000;
+	box-shadow: inset 0 0 80px #000000;
 	position: relative;
 	transition: .2s ease-in;
 	width: 100%;
@@ -113,7 +111,7 @@ body {
 }
 
 .body:hover {
-	box-shadow:inset 0 0 40px #000000;
+	box-shadow:inset 0 0 30px #000000;
 }
 
 .body-content {
@@ -149,15 +147,15 @@ body {
 }
 
 #facebook:hover {
-	content: url('../images/Facebook_active.png');
+	opacity: 0;
 }
 
 #twitter:hover {
-	content: url('../images/Twitter_active.png');
+	opacity: 0;
 }
 
 #yelp:hover {
-	content: url('../images/Yelp_active.png');
+	opacity: 0;
 }
 
 .address, .contact {
@@ -189,7 +187,7 @@ body {
 }
 
 #envelope:hover {
-	content: url('../images/Envelope_active.png');
+	opacity: 0;
 }
 
 .black_overlay{
