@@ -39,9 +39,6 @@ body {
 	padding-left: 70px;
 }
 
-/*.logo:hover {
-}
-*/
 .title {
 	display: block;
 	margin: 0;
@@ -67,7 +64,6 @@ body {
 .nav {
 	display: inline-block;
 	float: left;
-	margin-left: 25px;
 }
 
 .nav a {
@@ -78,8 +74,8 @@ body {
 	float: left;
 	padding-top: 15px;
 	padding-bottom: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 93.05px;
+	padding-right: 93.05px;
 	text-decoration: none;
 	transition: .3s ease-in;
 }
