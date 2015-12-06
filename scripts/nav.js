@@ -12,20 +12,15 @@
 
 // })();
 
-( function( $ ) {
-$( document ).ready(function() {
-// Cache the elements we'll need
-var menu = $('#cssmenu');
-var menuList = menu.find('ul:first');
-var listItems = menu.find('li').not('#responsive-tab');
-
-// Create responsive trigger
-menuList.prepend('<li id="responsive-tab"><a href="#">Menu</a></li>');
-
-// Toggle menu visibility
-menu.on('click', '#responsive-tab', function(){
-	listItems.slideToggle('fast');
-	listItems.addClass('collapsed');
-});
-});
-} )( jQuery );
+function changeContent() {
+	document.getElementById('page1').style.display = "none";
+	document.getElementById('page2').style.display = "block";
+	document.getElementById('email').value = '';
+	document.getElementById('name').value = '';
+}
+function changeBack() {
+	setTimeout(function() {
+		document.getElementById('page1').style.display = "block";
+		document.getElementById('page2').style.display = "none";
+	}, 1000);
+}
