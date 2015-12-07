@@ -114,21 +114,12 @@ body {
   color: #D2D50B;
 }
 
-.photo {
-	width: 100%;
-	height: 489px;
-/*
-	height: 468px;*/
-	position: relative;
-	background-image: url('../images/Taps.jpg');
-}
-
 .body {
 	background-color: #EBEBEB;
 	position: relative;
 	transition: .2s ease-in;
 	width: 100%;
-	height: 500px;
+	height: 925px;
 }
 
 .body-content {
@@ -143,6 +134,36 @@ h1 {
 	font-size: 34pt;
 	margin: 0;
 	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#buttons {
+	text-align: center;
+}
+
+.food-button {
+	margin: 20px;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-bottom: 0;
+	font-size: 24px;
+	color: white;
+	background: #2A5242;
+	font-weight: bold;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #2A5242;
+	border-radius: 4px;
+}
+.food-button:hover {
+	color: #D2D50B;
 }
 
 #food-content {
@@ -150,6 +171,54 @@ h1 {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+#side1 {
+	float: left;
+	width: 48%;
+	padding-right: 15px;
+}
+#side2 {
+	float: left;
+	width: 48%;
+	padding-left: 15px;
+}
+
+h2 {
+	font-size: 26pt;
+	text-align: center;
+	margin: 0;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+p#item-name{
+	font-weight: 500;
+	font-size: 22pt;
+	text-align: center;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 0;
+
+}
+
+p#item-description {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 16pt;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+h3 {
+	font-size: 18pt;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
 .footer {

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Firkin Tavern</title>
-  <link rel="stylesheet" type="text/css" href="styles/lunch-dinner.css">
+  <link rel="stylesheet" type="text/css" href="styles/burgers-pizza.css">
   <script type="text/javascript" src="scripts/nav.js"></script>
 </head>
 <body>
@@ -43,124 +43,103 @@
       <div class="body-content">
         <h1>Lunch & Dinner Menu</h1>
         <div id="buttons">
-          <a href="lunch-dinner.html"><button type="button" class="food-button" onclick="changeContent()" style="color: #D2D50B">Starters</button></a>
+          <a href="lunch-dinner.html"><button type="button" class="food-button" onclick="changeContent()">Starters</button></a>
           <a href="soups-salads.html"><button type="button" class="food-button" onclick="changeContent()">Soups/Salads</button></a>
           <a href="sammichs-wraps.html"><button type="button" class="food-button" onclick="changeContent()">Sammichs/Wraps</button></a>
-          <a href="burgers-pizza.html"><button type="button" class="food-button" onclick="changeContent()">Burgers/Pizza</button></a>
+          <a href="burgers-pizza.html"><button type="button" class="food-button" onclick="changeContent()" style="color: #D2D50B">Burgers/Pizza</button></a>
           <a href="entrees.html"><button type="button" class="food-button" onclick="changeContent()">Entrees</button></a>
           <a href="sides.html"><button type="button" class="food-button" onclick="changeContent()">Sides</button></a>
           <a href="childrens-menu.html"><button type="button" class="food-button" onclick="changeContent()">Children's Menu</button></a>
         </div>
         <div id="food-content">
-          <h2>Starters</h2>
-          <div id="start1">
+          <div id="burgers">
+            <h2>Burgers</h2>
             <p id="item-name">
-              Firkin Buffalo Wings
+              House Ground Burger
+            </p><p id="item-description">
+              Our house ground beef burger is a combination of sirloin, brisket & chuck. Comes with lettuce, tomato, fries, cole slaw & pickler
+            </p>
+            <h3>$8.99&nbsp;&nbsp;&nbsp;Turkey, Veggie, Meatloaf Burger $1<br/>Pretzel bun or Whole Wheat roll $0.99</h3>
+            <p id="item-name">
+              Cheese
             </p>
             <p id="item-description">
-              Juicy Jumbo wings smothered in one of our delicious sauces, served with bleu cheese & celery
+              Cheedar, Provolone, Swiss, Pepperjack, American, Crumbled Bleu Cheese, Shredded Mozzarella, Cheese Sauce, Fresh Mozzarella
+            </p>
+            <h3>$0.50 each</h3>
+            <p id="item-name">
+              Sauce
+            </p>
+            <p id="item-description">
+              Any Dressing, Any Wing Sauce, Jalapeno Ketchup, Pesto, Texas Petal, Guacamole, Marinara, Remoulade, Vodka Sauce
+            </p>
+            <h3>$0.25 each</h3>
+            <p id="item-name">
+              Toppings
+            </p>
+            <p id="item-description">
+              Sauteed Onions, Sautted Mushrooms, Bacon, Chili, Roasted Red Peppers, Jalapenos, Sauteed Peppers, Pork Roll, Turkey Bacon
+            </p>
+            <h3>$0.99 each</h3>
+            <p id="item-name">
+              "Award Winning" Turkey Burger
+            </p>
+            <p id="item-description">
+              Our handmade turkey burger on a toasted roll with cheddar, cranberry mustard, sweet onion, pickle chips & sliced mildly hot peppers
+            </p>
+            <h3>$9.99</h3>
+            <p id="item-name">
+              Ridiculous Burger
+            </p>
+            <p id="item-description">
+              Our half pound C.A.B. burger piled high with fresh potato chips, bacon, pork roll, thousand island dressing, fried egg, lettuce, tomato, onion, jalapenos & melted pepperjack cheese (No substitutions)
+            </p>
+            <h3>$11.99</h3>
+          </div>
+          <div id="pizza">
+            <h2>Thin Crust Pizza</h2>
+            <p id="item-name">
+              Arugula & Prosciutto
+            </p>
+            <p id="item-description">
+              Red sauce, fresh mozzarella, baby arugula, prosciutto, shaved parmesan & balsamic trufle drizzle
             </p>
             <h3>$10.99</h3>
             <p id="item-name">
-              Philly Cheesesteak Spring Rolls
+              Margarita
             </p>
             <p id="item-description">
-              Philly steak, cheese & onions wrapped in a golden fried spring roll
+              Red sauce, fresh mozzarella & fresh basil
             </p>
             <h3>$8.99</h3>
             <p id="item-name">
-              Spinach & Artichoke Dip
+              White Pie
             </p>
             <p id="item-description">
-              Fresh spinach, artichoke hearts & seasoned cream cheese melted down with provolone cheese. Served with tortilla chips
+              Three cheese blend, fresh ricotta & broccoli
             </p>
             <h3>$9.99</h3>
             <p id="item-name">
-              Quesadillas
+              Vodka Chicken
             </p>
             <p id="item-description">
-              Grilled flour tortilla with mixed cheese, tomatoes & pico de gallo
+              Vodka sauce, three cheese blend & grilled chicken
             </p>
-            <h3 style="font-size: 16pt">Half $5.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add chicken/chili/veggies $7.99<br/>Full $7.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add chicken/chili/veggies $9.99</h3>
+            <h3>$10.99</h3>
             <p id="item-name">
-              Macaroni & Cheese Balls
+              Build Your Own
             </p>
             <p id="item-description">
-              Homemade macaroni & cheese balls panko breaded & fried golden brown. Served with Texas petal sauce
-            </p>
-            <h3>$8.99</h3>
-            <p id="item-name">
-              Old Bay Shrimp
-            </p>
-            <p id="item-description">
-              A dozen pick-n-peel steamed shrimp tossed in Old Bay seasoning & served with clarified butter
-            </p>
-            <h3>$9.99</h3>
-            <p id="item-name">
-              Philly Cheesesteak Chips
-            </p>
-            <p id="item-description">
-              Fresh fried potato chips topped with chopped philly steak, peppers, onions & mozzarella. Served with jalapeno ketchup
-            </p>
-            <h3>$9.99</h3>
-          </div>
-          <div id="start2">
-            <p id="item-name">
-              Irish Nachos
-            </p>
-            <p id="item-description">
-              Seasoned fresh fried potato chips, mixed cheese, corned beef & thousand island dressing
-            </p>
-            <h3>Half $8.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $11.99</h3>
-            <p id="item-name">
-              Pork Roll Fries
-            </p>
-            <p id="item-description">
-              Deep fried strips of pork roll served with a side of sriracha cheese dipping sauce
+              Our 10" thin crust pizza topped with a three cheese blend & your choice of toppings
             </p>
             <h3>$7.99</h3>
             <p id="item-name">
-              Classic Nachos
+              Toppings
             </p>
             <p id="item-description">
-              Warm tortilla chips smothered in blended cheese, topped with pico de gallo, served with salsa & sour cream
+              Pepperoni, Sausage, Bacon, Prosciutto, Chicken, Spinach, Ricotta, Arugula, Shaved Parmesan, Broccoli, Peppers, Onions, Mushrooms, Roasted Red Peppers, Crumbled Bleu Cheese, Fresh Basil, Vodka Sauce, Jalapenos, Buffalo Sauce
             </p>
-            <h3>Half $8.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add chicken/chili $10.99<br/>Full $11.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add chicken/chili $13.99</h3>
-            <p id="item-name">
-              Green Bean Fries
-            </p>
-            <p id="item-description">
-              Crispy onion battered green beans fried crisp & served with Texas petal sauce
-            </p>
-            <h3>$6.99</h3>
-            <p id="item-name">
-              Chicken Fingers
-            </p>
-            <p id="item-description">
-              Crispy strips of white meat chicken breast with honey mustard & BBQ sauce
-            </p>
-            <h3>$8.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Wing Sauce for $1<br/>Add $1 for platter with french fries</h3>
-            <p id="item-name">
-              Poutine
-            </p>
-            <p id="item-description">
-              Our golden crispy fries topped with cheddar cheese curds & brown gravy
-            </p>
-            <h3>$8.99</h3>
-            <p id="item-name">
-              Firkin Sampler
-            </p>
-            <p id="item-description">
-              Wings, potato skins, stix & onion rings served with all of the favorite sauces (No substitutions)
-            </p>
-            <h3>$10.99</h3>
-            <p id="item-name">
-              Mozzarella Stix
-            </p>
-            <p id="item-description">
-              Golden fried mozzarella stix served with our homemade marinara sauce
-            </p>
-            <h3>$8.99</h3>
+            <h3>$0.99 each</h3>
           </div>
         </div>
       </div>
