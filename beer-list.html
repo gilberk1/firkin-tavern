@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <title>Firkin Tavern</title>
+  <link rel="stylesheet" type="text/css" href="styles/beer-list.css">
+  <script type="text/javascript" src="scripts/nav.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/Firkin_Tavern_Logo.png">
+      </div>
+      <div class="title">
+        <img src="images/Firkin_Tavern_Title.png">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id='nav'>
+    <ul style="margin: 0; padding: 0;">
+       <li><a href='index.html'><span>Home</span></a>
+       <li class='has-sub'><a href='#'><span>Specials</span></a>
+          <ul>
+             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+          </ul>
+       <li class='has-sub' style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Menus</span></a>
+          <ul>
+             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+             <li><a href='beer-list.html'><span>Beer List</span></a></li>
+             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+          </ul>
+       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+    </ul>
+  </div>
+  </div>
+  <div class="container">
+    <div class="body">
+      <div class="body-content">
+        <h1>Beer List</h1>
+        <div id="food-content">
+          <div id="draft">
+            <h2>Draft Selections</h2>
+            <p id="beer">
+              Ballast Point Grapefruit Sculpin<br/>Bud Light<br/>Coors Light<br/>Dogfish Head Midas Touch<br/>Firestone Walker Union Jack IPA<br/>Firestone Walker Velvet Merlin<br/>Founders All Day IPA<br/>Goose Island 312<br/>Guinness<br/>Gulden Draak<br/>Lagunitas Brown Shugga'<br/>Miller Lite<br/>Monks Cafe Sour<br/>Neshaminy Creek Dunks Ferry<br/>Newscastle Brown Ale<br/>Ommegang 'Take the Black' Stout<br/>River Horse Belgian Freeze<br/>Shock Top<br/>Shock Top Twisted Pretzel Wheat<br/>Spellbound Palo Santo Porter<br/>Stella Artois<br/>Strongbow English Cider<br/>Troegs Mad Elf<br/>Unibroue La Resolution<br/>Victory Hopdevil<br/>Yuengling Lager
+            </p>
+          </div>
+          <div id="bottle">
+            <h2>Bottle Selections</h2>
+            <p id="beer">
+              Abita Purple Haze<br/>Amstel Light<br/>Bud Light<br/>Bud Light Lime<br/>Budweiser<br/>Coors Light<br/>Corona<br/>Dogfish 60 minute IPA<br/>Founders Porter<br/>Fullers London Pride<br/>Heineken<br/>Heineken Light<br/>LeftHand Oktoberfest<br/>Michelob Ultra<br/>Miller Lite<br/>O'Doules (non-alcoholic)<br/>River Horse Tripel<br/>Rolling Rock
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer">
+      <div style="position: relative" class="social">
+        <img style="position: absolute" src="images/Facebook_active.png">
+    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
+        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+      </div>
+      <div class="address">
+        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      </div>
+      <div class="contact">
+        <p>(609) 771-0100<br>info@firkintavern.com</p>
+      </div>
+      <div class="email">
+    <img style="position: absolute" src="images/Envelope_active.png">
+        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
+          <div id="page1" style="display: block">
+                <div class="modal-header">
+                    <h4 class="modal-title">Email Subscription</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                      <div class="form-group">
+                        <label>Email Address:</label>
+                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
+                      </div>
+                      <div class="form-group">
+                        <label>First Name:</label>
+                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                      </div>
+                    </form>             
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+                </div>
+            </div>
+            <div id="page2" style="display: none">
+              <div class="modal-header">
+                    <h4 class="modal-title">Thank you for subscribing!</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <title>Firkin Tavern</title>
+  <link rel="stylesheet" type="text/css" href="styles/dinner-specials.css">
+  <script type="text/javascript" src="scripts/nav.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/Firkin_Tavern_Logo.png">
+      </div>
+      <div class="title">
+        <img src="images/Firkin_Tavern_Title.png">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id='nav'>
+    <ul style="margin: 0; padding: 0;">
+       <li><a href='index.html'><span>Home</span></a>
+       <li class='has-sub'style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Specials</span></a>
+          <ul>
+             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+          </ul>
+       <li class='has-sub'><a href='#'><span>Menus</span></a>
+          <ul>
+             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+             <li><a href='beer-list.html'><span>Beer List</span></a></li>
+             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+          </ul>
+       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+    </ul>
+  </div>
+  </div>
+  <div class="container">
+    <div class="body">
+      <div class="body-content">
+        <h1>Dinner Specials</h1>
+        <div id="food-content">
+          <h3>Sunday</h3>
+          <p id="special">
+            Kids Eat Free with Adult Entree
+          </p>
+          <h3>Monday</h3>
+          <p id="special">
+            10% Off Food with Military ID
+          </p>
+          <h3>Tuesday</h3>
+          <p id="special">
+            Buy 2 Sammichs or Entrees<br/>Get a Free Small Nacho
+          </p>
+          <h3>Wednesday</h3>
+          <p id="special">
+            1/2 Price Draft Beer with Entree<br/>(1 per person, 21 & over only)
+          </p>
+          <h3>Thursday</h3>
+          <p id="special">
+            Complete NY Strip Dinner with Dessert
+          </p>
+          <h3>Saturday</h3>
+          <p id="special">
+            Buy 2 Entrees, Get a Free Dessert
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer">
+      <div style="position: relative" class="social">
+        <img style="position: absolute" src="images/Facebook_active.png">
+    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
+        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+      </div>
+      <div class="address">
+        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      </div>
+      <div class="contact">
+        <p>(609) 771-0100<br>info@firkintavern.com</p>
+      </div>
+      <div class="email">
+    <img style="position: absolute" src="images/Envelope_active.png">
+        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
+          <div id="page1" style="display: block">
+                <div class="modal-header">
+                    <h4 class="modal-title">Email Subscription</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                      <div class="form-group">
+                        <label>Email Address:</label>
+                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
+                      </div>
+                      <div class="form-group">
+                        <label>First Name:</label>
+                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                      </div>
+                    </form>             
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+                </div>
+            </div>
+            <div id="page2" style="display: none">
+              <div class="modal-header">
+                    <h4 class="modal-title">Thank you for subscribing!</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
