@@ -128,7 +128,7 @@ body {
 	position: relative;
 	transition: .2s ease-in;
 	width: 100%;
-	height: 500px;
+	height: 700px;
 }
 
 .body-content {
@@ -145,11 +145,149 @@ h1 {
 	margin-top: 15px;
 }
 
-#food-content {
+#calendar {
+	float: left;
+	text-align: center;
+	width: 48%;
+	padding-right: 15px;
+}
+
+.cal-table {
+  position: relative;
+  margin: 50px;
+  margin-top: 80px;
+  width: 450px;
+  height: 300px;
+  background: #3C3E40;
+}
+
+.cal-caption {
+  width: 100%;
+  padding-bottom: 1px;
+  line-height: 75px;
+  font-weight: bold;
+  font-size: 24pt;
+  color: #D2D50B;
+  background: #2A5242;
+  text-align: center;
+}
+
+.cal-body td {
+  width: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cal-body a {
+  display: block;
+  position: relative;
+  line-height: 55px;
+  color: white;
+  text-align: center;
+  background: #2D2F31;
+  text-decoration: none;
+}
+
+.cal-body a:hover {
+  background: #83861D;
+}
+
+.cal-off a {
+  color: #B3AEAE;
+  font-weight: normal;
+}
+
+.cal-off a:hover {
+	background:#2D2F31;
+}
+
+.cal-today a {
+  color: white;
+  background: #83861D;
+}
+
+.cal-body a:active {
+  margin: -1px;
+  color: white;
+  border: 1px solid black;
+  background: #83861D;
+}
+
+.cal-check a {
+  color: white;
+  overflow: hidden;
+}
+
+.cal-check a:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: -6px;
+  width: 20px;
+  height: 40px;
+  background: #2A5242;
+  background-image: -webkit-linear-gradient(top, #2A5242, #2A5242);
+  background-image: -moz-linear-gradient(top, #2A5242, #2A5242);
+  background-image: -o-linear-gradient(top, #2A5242, #2A5242);
+  background-image: linear-gradient(to bottom, #2A5242, #2A5242);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#events {
+	float: left;
+	text-align: center;
+	width: 48%;
+	padding-left: 15px;
+}
+
+#events-content {
 	float: left;
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+h2 {
+	font-size: 26pt;
+	text-align: center;
+	margin: 0;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 24pt;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	margin-top: 20px;
+
+}
+
+p#event {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 20pt;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+}
+p#monthly-description {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 20pt;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
 }
 
 .footer {
