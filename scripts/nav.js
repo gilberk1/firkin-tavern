@@ -12,6 +12,16 @@
 
 // })();
 
+function dropdownSpecials() {
+	document.getElementById('specials').style.display = "block";
+	document.getElementById('menus').style.display = "none";
+}
+
+function dropdownMenus() {
+	document.getElementById('specials').style.display = "none";
+	document.getElementById('menus').style.display = "block";
+}
+
 function changeContent() {
 	document.getElementById('page1').style.display = "none";
 	document.getElementById('page2').style.display = "block";
