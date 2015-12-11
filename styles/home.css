@@ -53,36 +53,36 @@ body {
   text-align: left;
 }
 #nav > ul {
-  width: auto;
-  list-style-type: none;
+  	width: auto;
+  	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	background-color: #2A5242;
 }
 
 #nav > ul li {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  	display: inline-block;
+  	*display: inline;
+  	zoom: 1;
 }
 #nav > ul li.right {
-  float: right;
+  	float: right;
 }
 #nav > ul li.has-sub {
-  position: relative;
+  	position: relative;
 }
 #nav > ul li.has-sub:hover ul {
-  display: block;
+  	display: block;
 }
 #nav > ul li.has-sub ul {
-  display: none;
-  width: 100%;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background: #2A5242;
-   z-index: 100;
+  	display: none;
+  	width: 100%;
+  	position: absolute;
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+  	background: #2A5242;
+   	z-index: 100;
 }
 #nav > ul li.has-sub ul li {
 	width: 100%;
@@ -103,11 +103,11 @@ body {
 }
 
 #nav > ul li a {
-  display: block;
-  margin: 0;
-  padding: 5px 83.5px 5px 83.5px;
-  text-decoration: none;
-  color: white;
+  	display: block;
+  	margin: 0;
+  	padding: 5px 83.5px 5px 83.5px;
+  	text-decoration: none;
+  	color: white;
 }
 #nav > ul li a:hover {
   background: #553A1F;
@@ -153,49 +153,49 @@ h1 {
 }
 
 .cal-table {
-  position: relative;
-  margin: 50px;
-  margin-top: 80px;
-  width: 450px;
-  height: 300px;
-  background: #3C3E40;
+  	position: relative;
+  	margin: 50px;
+  	margin-top: 80px;
+  	width: 450px;
+  	height: 300px;
+  	background: #3C3E40;
 }
 
 .cal-caption {
-  width: 100%;
-  padding-bottom: 1px;
-  line-height: 75px;
-  font-weight: bold;
-  font-size: 24pt;
-  color: #D2D50B;
-  background: #2A5242;
-  text-align: center;
+  	width: 100%;
+  	padding-bottom: 1px;
+  	line-height: 75px;
+  	font-weight: bold;
+  	font-size: 24pt;
+  	color: #D2D50B;
+  	background: #2A5242;
+  	text-align: center;
 }
 
 .cal-body td {
-  width: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+  	width: 30px;
+  	font-size: 20px;
+  	font-weight: bold;
+  	text-align: center;
 }
 
 .cal-body a {
-  display: block;
-  position: relative;
-  line-height: 55px;
-  color: white;
-  text-align: center;
-  background: #2D2F31;
-  text-decoration: none;
+  	display: block;
+  	position: relative;
+  	line-height: 55px;
+  	color: white;
+  	text-align: center;
+  	background: #2D2F31;
+  	text-decoration: none;
 }
 
 .cal-body a:hover {
-  background: #83861D;
+  	background: #83861D;
 }
 
 .cal-off a {
-  color: #B3AEAE;
-  font-weight: normal;
+  	color: #B3AEAE;
+  	font-weight: normal;
 }
 
 .cal-off a:hover {
@@ -203,39 +203,39 @@ h1 {
 }
 
 .cal-today a {
-  color: white;
-  background: #83861D;
+  	color: white;
+  	background: #83861D;
 }
 
 .cal-body a:active {
-  margin: -1px;
-  color: white;
-  border: 1px solid black;
-  background: #83861D;
+  	margin: -1px;
+  	color: white;
+  	border: 1px solid black;
+  	background: #83861D;
 }
 
 .cal-check a {
-  color: white;
-  overflow: hidden;
+  	color: white;
+  	overflow: hidden;
 }
 
 .cal-check a:before {
-  content: '';
-  position: absolute;
-  top: -15px;
-  right: -6px;
-  width: 20px;
-  height: 40px;
-  background: #2A5242;
-  background-image: -webkit-linear-gradient(top, #2A5242, #2A5242);
-  background-image: -moz-linear-gradient(top, #2A5242, #2A5242);
-  background-image: -o-linear-gradient(top, #2A5242, #2A5242);
-  background-image: linear-gradient(to bottom, #2A5242, #2A5242);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  	content: '';
+  	position: absolute;
+  	top: -15px;
+  	right: -6px;
+  	width: 20px;
+  	height: 40px;
+  	background: #2A5242;
+  	background-image: -webkit-linear-gradient(top, #2A5242, #2A5242);
+  	background-image: -moz-linear-gradient(top, #2A5242, #2A5242);
+  	background-image: -o-linear-gradient(top, #2A5242, #2A5242);
+  	background-image: linear-gradient(to bottom, #2A5242, #2A5242);
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-ms-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
 }
 
 #events {
@@ -268,7 +268,6 @@ h3 {
 	margin-bottom: 5px;
 	padding: 0;
 	margin-top: 20px;
-
 }
 
 p#event {
@@ -383,30 +382,24 @@ p#monthly-description {
 	display: inline-block;
 	float: left;
 	position: absolute;
-	margin-left: 100px;
-	margin-right: 100px;
 	padding-top: 35px;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin-left: -58px;
 	transition: .3s ease-in;
 	width: 58px;
 	height: 38px;
 }
 #e-active {
 	position: relative;
-	display: block;
+	display: inline-block;
 	float: left;
-	margin-left: 100px;
-	margin-right: 100px;
 	padding-top: 35px;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin-left: 100px;
 	transition: .3s ease-in;
 	width: 58px;
 	height: 38px;
 }
 
-#e-active:hover {
+#envelope:hover {
 	opacity: 0;
 }
 
@@ -464,58 +457,58 @@ p#monthly-description {
 }
 
 .modal-header {
-  min-height: 16.42857143px;
-  padding: 15px;
+  	min-height: 16.42857143px;
+  	padding: 15px;
 }
 
 .modal-title {
-  margin: 0;
-  font-size: 20pt;
-  line-height: 1.42857143;
+  	margin: 0;
+  	font-size: 20pt;
+  	line-height: 1.42857143;
 }
 
 .modal-body {
-  position: relative;
-  padding: 15px;
+  	position: relative;
+  	padding: 15px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  	margin-bottom: 20px;
 }
 
 .form-control {
-  display: block;
-  width: 95%;
-  height: 34px;
-  padding: 6px 12px;
-  margin-top: 10px;
-  margin-left: -2px;
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	display: block;
+	width: 95%;
+	height: 34px;
+	padding: 6px 12px;
+	margin-top: 10px;
+	margin-left: -2px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .form-control:focus {
   	border-color: gray;
   	outline: 0;
   	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 .modal-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  text-align: right;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	padding-bottom: 20px;
+  	text-align: right;
 }
 
 .btn {
@@ -548,9 +541,9 @@ p#monthly-description {
 }
 
 .btn-primary:hover {
-  color: black;
-  background-color: #D2D50B;
-  border-color: black;
+  	color: black;
+  	background-color: #D2D50B;
+  	border-color: black;
 }
 
 /* Tablet */
@@ -590,43 +583,43 @@ p#monthly-description {
 
 
 	#nav {
-	  font-size: 20.48px;
-	  font-weight: bold;
-	  line-height: 46.08px;
-	  text-transform: uppercase;
-	  text-align: left;
+	  	font-size: 20.48px;
+	  	font-weight: bold;
+	  	line-height: 46.08px;
+	  	text-transform: uppercase;
+	  	text-align: left;
 	}
 	#nav > ul {
-	  width: auto;
-	  list-style-type: none;
+	  	width: auto;
+	  	list-style-type: none;
 		margin: 0;
 		padding: 0;
 		background-color: #2A5242;
 	}
 
 	#nav > ul li {
-	  display: inline-block;
-	  *display: inline;
-	  zoom: 1;
+	  	display: inline-block;
+	  	*display: inline;
+	  	zoom: 1;
 	}
 	#nav > ul li.right {
-	  float: right;
+	  	float: right;
 	}
 	#nav > ul li.has-sub {
-	  position: relative;
+	  	position: relative;
 	}
 	#nav > ul li.has-sub:hover ul {
-	  display: none;
+	  	display: none;
 	}
 	#nav > ul li.has-sub ul {
-	  display: none;
-	  width: 100%;
-	  position: absolute;
-	  margin: 0;
-	  padding: 0;
-	  list-style-type: none;
-	  background: #2A5242;
-	  z-index: 100;
+	  	display: none;
+	  	width: 100%;
+	  	position: absolute;
+	  	margin: 0;
+	  	padding: 0;
+	  	list-style-type: none;
+	  	background: #2A5242;
+	  	z-index: 100;
 	}
 	#nav > ul li.has-sub ul li {
 		width: 100%;
@@ -647,15 +640,15 @@ p#monthly-description {
 	}
 
 	#nav > ul li a {
-	  display: block;
-	  margin: 0;
-	  padding: 3.2px 48.65px 3.2px 48.65px;
-	  text-decoration: none;
-	  color: white;
+	  	display: block;
+	  	margin: 0;
+	  	padding: 3.2px 48.65px 3.2px 48.65px;
+	  	text-decoration: none;
+	  	color: white;
 	}
 	#nav > ul li a:hover {
-	  background: none;
-	  color: white;
+	  	background: none;
+	  	color: white;
 	}
 
 	#photo {
@@ -694,49 +687,49 @@ p#monthly-description {
 	}
 
 	.cal-table {
-	  position: relative;
-	  margin: 32px;
-	  margin-top: 51.2px;
-	  width: 288px;
-	  height: 102px;
-	  background: #3C3E40;
+	  	position: relative;
+	  	margin: 32px;
+	  	margin-top: 51.2px;
+	  	width: 288px;
+	  	height: 102px;
+	  	background: #3C3E40;
 	}
 
 	.cal-caption {
-	  width: 100%;
-	  padding-bottom: 0.64px;
-	  line-height: 48px;
-	  font-weight: bold;
-	  font-size: 15.36pt;
-	  color: #D2D50B;
-	  background: #2A5242;
-	  text-align: center;
+	  	width: 100%;
+	  	padding-bottom: 0.64px;
+	  	line-height: 48px;
+	  	font-weight: bold;
+	  	font-size: 15.36pt;
+	  	color: #D2D50B;
+	  	background: #2A5242;
+	  	text-align: center;
 	}
 
 	.cal-body td {
-	  width: 19.2px;
-	  font-size: 12.8px;
-	  font-weight: bold;
-	  text-align: center;
+	  	width: 19.2px;
+	  	font-size: 12.8px;
+	  	font-weight: bold;
+	  	text-align: center;
 	}
 
 	.cal-body a {
-	  display: block;
-	  position: relative;
-	  line-height: 35.2px;
-	  color: white;
-	  text-align: center;
-	  background: #2D2F31;
-	  text-decoration: none;
+	  	display: block;
+	  	position: relative;
+	  	line-height: 35.2px;
+	  	color: white;
+	  	text-align: center;
+	  	background: #2D2F31;
+	  	text-decoration: none;
 	}
 
 	.cal-body a:hover {
-	  background: #2D2F31;
+	  	background: #2D2F31;
 	}
 
 	.cal-off a {
-	  color: #B3AEAE;
-	  font-weight: normal;
+	  	color: #B3AEAE;
+	  	font-weight: normal;
 	}
 
 	.cal-off a:hover {
@@ -744,39 +737,39 @@ p#monthly-description {
 	}
 
 	.cal-today a {
-	  color: white;
-	  background: #83861D;
+	  	color: white;
+	  	background: #83861D;
 	}
 
 	.cal-body a:active {
-	  margin: -1px;
-	  color: white;
-	  border: 1px solid black;
-	  background: #83861D;
+	  	margin: -1px;
+	  	color: white;
+	  	border: 1px solid black;
+	  	background: #83861D;
 	}
 
 	.cal-check a {
-	  color: white;
-	  overflow: hidden;
+	  	color: white;
+	  	overflow: hidden;
 	}
 
 	.cal-check a:before {
-	  content: '';
-	  position: absolute;
-	  top: -20px;
-	  right: -10px;
-	  width: 20px;
-	  height: 40px;
-	  background: #2A5242;
-	  background-image: -webkit-linear-gradient(top, #2A5242, #2A5242);
-	  background-image: -moz-linear-gradient(top, #2A5242, #2A5242);
-	  background-image: -o-linear-gradient(top, #2A5242, #2A5242);
-	  background-image: linear-gradient(to bottom, #2A5242, #2A5242);
-	  -webkit-transform: rotate(-45deg);
-	  -moz-transform: rotate(-45deg);
-	  -ms-transform: rotate(-45deg);
-	  -o-transform: rotate(-45deg);
-	  transform: rotate(-45deg);
+	  	content: '';
+	  	position: absolute;
+	  	top: -20px;
+	  	right: -10px;
+	  	width: 20px;
+	  	height: 40px;
+	  	background: #2A5242;
+	  	background-image: -webkit-linear-gradient(top, #2A5242, #2A5242);
+	  	background-image: -moz-linear-gradient(top, #2A5242, #2A5242);
+	  	background-image: -o-linear-gradient(top, #2A5242, #2A5242);
+	  	background-image: linear-gradient(to bottom, #2A5242, #2A5242);
+	  	-webkit-transform: rotate(-45deg);
+	  	-moz-transform: rotate(-45deg);
+	  	-ms-transform: rotate(-45deg);
+	  	-o-transform: rotate(-45deg);
+	  	transform: rotate(-45deg);
 	}
 
 	#events {
@@ -914,29 +907,17 @@ p#monthly-description {
 		font-weight: bold;
 		color: white;
 	}
-
+		
 	#envelope {
-		display: inline-block;
-		float: left;
-		position: absolute;
-		margin-left: 64px;
-		margin-right: 64px;
-		padding-top: 22.4px;
-		padding-left: 3.2px;
-		padding-right: 3.2px;
-		transition: .3s ease-in;
-		width: 37.12px;
-		height: 24.32px;
+		display: none;
+
 	}
 	#e-active {
 		position: relative;
-		display: none;
+		display: inline-block;
 		float: left;
-		margin-left: 64px;
-		margin-right: 64px;
 		padding-top: 22.4px;
-		padding-left: 3.2px;
-		padding-right: 3.2px;
+		margin-left: 64px;
 		transition: .3s ease-in;
 		width: 37.12px;
 		height: 24.32px;
@@ -996,58 +977,58 @@ p#monthly-description {
 	}
 
 	.modal-header {
-	  min-height: 16.42857143px;
-	  padding: 15px;
+	  	min-height: 16.42857143px;
+	  	padding: 15px;
 	}
 
 	.modal-title {
-	  margin: 0;
-	  font-size: 20pt;
-	  line-height: 1.42857143;
+	  	margin: 0;
+	  	font-size: 20pt;
+	  	line-height: 1.42857143;
 	}
 
 	.modal-body {
-	  position: relative;
-	  padding: 15px;
+	  	position: relative;
+	  	padding: 15px;
 	}
 
 	.form-group {
-	  margin-bottom: 20px;
+	  	margin-bottom: 20px;
 	}
 
 	.form-control {
-	  display: block;
-	  width: 95%;
-	  height: 34px;
-	  padding: 6px 12px;
-	  margin-top: 10px;
-	  margin-left: -2px;
-	  font-size: 16px;
-	  line-height: 1.42857143;
-	  color: #555;
-	  background-color: #fff;
-	  background-image: none;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-	       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	  	display: block;
+	  	width: 95%;
+	  	height: 34px;
+	  	padding: 6px 12px;
+	  	margin-top: 10px;
+	  	margin-left: -2px;
+	  	font-size: 16px;
+	  	line-height: 1.42857143;
+	  	color: #555;
+	  	background-color: #fff;
+	  	background-image: none;
+	  	border: 1px solid #ccc;
+	  	border-radius: 4px;
+	  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	  	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	}
 
 	.form-control:focus {
 	  	border-color: gray;
 	  	outline: 0;
 	  	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-	          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 	}
 
 	.modal-footer {
-	  padding-left: 20px;
-	  padding-right: 20px;
-	  padding-bottom: 20px;
-	  text-align: right;
+	  	padding-left: 20px;
+	  	padding-right: 20px;
+	  	padding-bottom: 20px;
+	  	text-align: right;
 	}
 
 	.btn {
@@ -1080,9 +1061,9 @@ p#monthly-description {
 	}
 
 	.btn-primary:hover {
-	  color: white;
-	  background-color: #2A5242;
-	  border-color: gray;
+	  	color: white;
+	  	background-color: #2A5242;
+	  	border-color: gray;
 	}
 }
 

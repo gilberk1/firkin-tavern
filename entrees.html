@@ -8,35 +8,31 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="logo">
-        <img src="images/Firkin_Tavern_Logo.png">
-      </div>
-      <div class="title">
-        <img src="images/Firkin_Tavern_Title.png">
-      </div>
+      <img id="logo" src="images/Firkin_Tavern_Logo.png">
+      <img id="title" src="images/Firkin_Tavern_Title.png">
     </div>
   </div>
   <div class="container">
     <div id='nav'>
-    <ul style="margin: 0; padding: 0;">
-       <li><a href='index.html'><span>Home</span></a>
-       <li class='has-sub'><a href='#'><span>Specials</span></a>
-          <ul>
-             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
-             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
-             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
-          </ul>
-       <li class='has-sub' style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Menus</span></a>
-          <ul>
-             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
-             <li><a href='beer-list.html'><span>Beer List</span></a></li>
-             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
-             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
-             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
-          </ul>
-       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
-    </ul>
-  </div>
+      <ul style="margin: 0; padding: 0;">
+        <li><a href='index.html'><span>Home</span></a>
+        <li class='has-sub'><a href='#' onclick="dropdownSpecials()"><span>Specials</span></a>
+        <ul id="specials">
+          <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+          <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+          <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+        </ul>
+        <li style="background-color: #4D2702" class='has-sub'><a href='#' style="color: #D2D50B" onclick="dropdownMenus()"><span>Menus</span></a>
+        <ul id="menus">
+          <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+          <li><a href='beer-list.html'><span>Beer List</span></a></li>
+          <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+          <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+          <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+        </ul>
+        <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+      </ul>
+    </div>
   </div>
   <div class="container">
     <div class="body">
@@ -55,104 +51,49 @@
           <h2>Entrees</h2>
           <h3>Most entrees come with choice of baked potato, smashed cheddar potato, rice or fries.<br/>Add soup or house salad for $1.49. Add grilled shrimp for $5.99</h3>
           <div id="ent1">
-            <p id="item-name">
-              Bacon Ranch Pub Steak
-            </p><p id="item-description">
-              An 8 oz. C.A.B. pub steak wwrapped in bacon & ranch seasoning, then cooked to your liking
-            </p>
+            <p id="item-name">Bacon Ranch Pub Steak</p>
+            <p id="item-description">An 8 oz. C.A.B. pub steak wwrapped in bacon & ranch seasoning, then cooked to your liking</p>
             <h3>$15.99</h3>
-            <p id="item-name">
-              English Fish & Chips
-            </p>
-            <p id="item-description">
-              Tender flaky cod in a Newscastle Brown Ale beer batter, served with french fries, tarter & cole slaw
-            </p>
+            <p id="item-name">English Fish & Chips</p>
+            <p id="item-description">Tender flaky cod in a Newscastle Brown Ale beer batter, served with french fries, tarter & cole slaw</p>
             <h3>Light $11.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $14.99</h3>
-            <p id="item-name">
-              Italian Burrito
-            </p>
-            <p id="item-description">
-              Homemade sausage, spinach, risotto & prosciutto stuffed in a flour tortilla, topped with provolone, pesto & red pepper sauce
-            </p>
+            <p id="item-name">Italian Burrito</p>
+            <p id="item-description">Homemade sausage, spinach, risotto & prosciutto stuffed in a flour tortilla, topped with provolone, pesto & red pepper sauce</p>
             <h3>$15.99</h3>
-            <p id="item-name">
-              NY Strip Steak
-            </p>
-            <p id="item-description">
-              House cut New York Strip steak grilled to your liking & topped with a mushroom demi-glaze sauce
-            </p>
+            <p id="item-name">NY Strip Steak</p>
+            <p id="item-description">House cut New York Strip steak grilled to your liking & topped with a mushroom demi-glaze sauce</p>
             <h3>8 oz. $16.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 oz. $19.99</h3>
-            <p id="item-name">
-              Scallops Over Risotto
-            </p>
-            <p id="item-description">
-              Pan seared sea scallops on a bed of parmesan risotto, served with steamed broccoli
-            </p>
+            <p id="item-name">Scallops Over Risotto</p>
+            <p id="item-description">Pan seared sea scallops on a bed of parmesan risotto, served with steamed broccoli</p>
             <h3>$18.99</h3>
-            <p id="item-name">
-              Chicken Francaise
-            </p>
-            <p id="item-description">
-              Egg battered chicken breast in a lemon wine franchaise sauce over linguine topped with lemon & fresh parsley
-            </p>
+            <p id="item-name">Chicken Francaise</p>
+            <p id="item-description">Egg battered chicken breast in a lemon wine franchaise sauce over linguine topped with lemon & fresh parsley</p>
             <h3>$14.99</h3>
-            <p id="item-name">
-              Sesame Ahi Tuna Steak
-            </p>
-            <p id="item-description">
-              Sesame ahi crusted tuna steak cooked to your liking, drizzled with wasabi ranch sauce & served with broccoli
-            </p>
+            <p id="item-name">Sesame Ahi Tuna Steak</p>
+            <p id="item-description">Sesame ahi crusted tuna steak cooked to your liking, drizzled with wasabi ranch sauce & served with broccoli</p>
             <h3>$15.99</h3>
           </div>
           <div id="ent2">
-            <p id="item-name">
-              Lobster Mac & Cheese
-            </p>
-            <p id="item-description">
-              Cavatappi pasta in a cheddar & meunster cheese sauce loaded with lobster meat, topped with panko bread crumbs & baked golden brown
-            </p>
+            <p id="item-name">Lobster Mac & Cheese</p>
+            <p id="item-description">Cavatappi pasta in a cheddar & meunster cheese sauce loaded with lobster meat, topped with panko bread crumbs & baked golden brown</p>
             <h3>Light $14.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $17.99</h3>
-            <p id="item-name">
-              Chicken Cordon Bleu
-            </p>
-            <p id="item-description">
-              Chicken breast stuffed with ham & Swiss cheese panko breaded & baked golden brown, drizzled with honey mustard & served with mac-n-cheese
-            </p>
+            <p id="item-name">Chicken Cordon Bleu</p>
+            <p id="item-description">Chicken breast stuffed with ham & Swiss cheese panko breaded & baked golden brown, drizzled with honey mustard & served with mac-n-cheese</p>
             <h3>$16.99</h3>
-            <p id="item-name">
-              Shepherd's Pie
-            </p>
-            <p id="item-description">
-              Ground beef & veggies in a hearty gravy topped with mashed potatoes then baked
-            </p>
+            <p id="item-name">Shepherd's Pie</p>
+            <p id="item-description">Ground beef & veggies in a hearty gravy topped with mashed potatoes then baked</p>
             <h3>Light $11.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $14.99</h3>
-            <p id="item-name">
-              Baby Back Ribs
-            </p>
-            <p id="item-description">
-              Slow roasted, fall off the bone baby back ribs with your favorite sauce
-            </p>
+            <p id="item-name">Baby Back Ribs</p>
+            <p id="item-description">Slow roasted, fall off the bone baby back ribs with your favorite sauce</p>
             <h3>Half $10.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $17.99</h3>
-            <p id="item-name">
-              Vodka Seafood
-            </p>
-            <p id="item-description">
-              Shrimp, scallops, lobster & crabmeat tossed with linguine & prosciutto in vodka sauce
-            </p>
+            <p id="item-name">Vodka Seafood</p>
+            <p id="item-description">Shrimp, scallops, lobster & crabmeat tossed with linguine & prosciutto in vodka sauce</p>
             <h3>Light $15.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full $18.99</h3>
-            <p id="item-name">
-              Crab Cakes
-            </p>
-            <p id="item-description">
-              Two pan seared jumbo lump crab cakes topped with remoulade sauce & red pepper relish
-            </p>
+            <p id="item-name">Crab Cakes</p>
+            <p id="item-description">Two pan seared jumbo lump crab cakes topped with remoulade sauce & red pepper relish</p>
             <h3>$17.99</h3>
-            <p id="item-name">
-              Garlic Herb Chicken
-            </p>
-            <p id="item-description">
-              Chicken breast marinated with fresh garlic, rosemary & thyme, then grilled in  a light lemon wine sauce, served with broccoli
-            </p>
+            <p id="item-name">Garlic Herb Chicken</p>
+            <p id="item-description">Chicken breast marinated with fresh garlic, rosemary & thyme, then grilled in  a light lemon wine sauce, served with broccoli</p>
             <h3>$14.99</h3>
           </div>
         </div>
@@ -162,52 +103,45 @@
   <div class="container">
     <div class="footer">
       <div style="position: relative" class="social">
-        <img style="position: absolute" src="images/Facebook_active.png">
-    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
-        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
-        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
-        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="f-active" src="images/Facebook_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" src="images/Yelp.png"></a>
       </div>
-      <div class="address">
-        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
-      </div>
-      <div class="contact">
-        <p>(609) 771-0100<br>info@firkintavern.com</p>
-      </div>
-      <div class="email">
-    <img style="position: absolute" src="images/Envelope_active.png">
-        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
-
-    <div id="openModal" class="modalDialog">
+      <p id="address">1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      <p id="contact">(609) 771-0100<br>info@firkintavern.com</p>
+      <a href="#openModal"><img id="e-active" src="images/Envelope_active.png"></a>
+      <a href="#openModal"><img id="envelope" src="images/Envelope.png"></a>
+      <div id="openModal" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
           <div id="page1" style="display: block">
-                <div class="modal-header">
-                    <h4 class="modal-title">Email Subscription</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="form">
-                      <div class="form-group">
-                        <label>Email Address:</label>
-                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
-                      </div>
-                      <div class="form-group">
-                        <label>First Name:</label>
-                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
-                      </div>
-                    </form>             
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
-                </div>
+            <div class="modal-header">
+              <h4 class="modal-title">Email Subscription</h4>
             </div>
-            <div id="page2" style="display: none">
-              <div class="modal-header">
-                    <h4 class="modal-title">Thank you for subscribing!</h4>
+            <div class="modal-body">
+              <form id="form">
+                <div class="form-group">
+                  <label>Email Address:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter email"/>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label>First Name:</label>
+                  <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                </div>
+              </form>             
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+            </div>
+          </div>
+          <div id="page2" style="display: none">
+            <div class="modal-header">
+              <h4 class="modal-title">Thank you for subscribing!</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
