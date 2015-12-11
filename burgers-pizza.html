@@ -8,35 +8,31 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="logo">
-        <img src="images/Firkin_Tavern_Logo.png">
-      </div>
-      <div class="title">
-        <img src="images/Firkin_Tavern_Title.png">
-      </div>
+      <img id="logo" src="images/Firkin_Tavern_Logo.png">
+      <img id="title" src="images/Firkin_Tavern_Title.png">
     </div>
   </div>
   <div class="container">
     <div id='nav'>
-    <ul style="margin: 0; padding: 0;">
-       <li><a href='index.html'><span>Home</span></a>
-       <li class='has-sub'><a href='#'><span>Specials</span></a>
-          <ul>
-             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
-             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
-             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
-          </ul>
-       <li class='has-sub' style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Menus</span></a>
-          <ul>
-             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
-             <li><a href='beer-list.html'><span>Beer List</span></a></li>
-             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
-             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
-             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
-          </ul>
-       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
-    </ul>
-  </div>
+      <ul style="margin: 0; padding: 0;">
+        <li><a href='index.html'><span>Home</span></a>
+        <li class='has-sub'><a href='#' onclick="dropdownSpecials()"><span>Specials</span></a>
+        <ul id="specials">
+          <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+          <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+          <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+        </ul>
+        <li style="background-color: #4D2702" class='has-sub'><a href='#' style="color: #D2D50B" onclick="dropdownMenus()"><span>Menus</span></a>
+        <ul id="menus">
+          <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+          <li><a href='beer-list.html'><span>Beer List</span></a></li>
+          <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+          <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+          <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+        </ul>
+        <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+      </ul>
+    </div>
   </div>
   <div class="container">
     <div class="body">
@@ -54,91 +50,44 @@
         <div id="food-content">
           <div id="burgers">
             <h2>Burgers</h2>
-            <p id="item-name">
-              House Ground Burger
-            </p><p id="item-description">
-              Our house ground beef burger is a combination of sirloin, brisket & chuck. Comes with lettuce, tomato, fries, cole slaw & pickler
-            </p>
+            <p id="item-name">House Ground Burger</p>
+            <p id="item-description">Our house ground beef burger is a combination of sirloin, brisket & chuck. Comes with lettuce, tomato, fries, cole slaw & pickles</p>
             <h3>$8.99&nbsp;&nbsp;&nbsp;Turkey, Veggie, Meatloaf Burger $1<br/>Pretzel bun or Whole Wheat roll $0.99</h3>
-            <p id="item-name">
-              Cheese
-            </p>
-            <p id="item-description">
-              Cheedar, Provolone, Swiss, Pepperjack, American, Crumbled Bleu Cheese, Shredded Mozzarella, Cheese Sauce, Fresh Mozzarella
-            </p>
+            <p id="item-name">Cheese</p>
+            <p id="item-description">Cheedar, Provolone, Swiss, Pepperjack, American, Crumbled Bleu Cheese, Shredded Mozzarella, Cheese Sauce, Fresh Mozzarella</p>
             <h3>$0.50 each</h3>
-            <p id="item-name">
-              Sauce
-            </p>
-            <p id="item-description">
-              Any Dressing, Any Wing Sauce, Jalapeno Ketchup, Pesto, Texas Petal, Guacamole, Marinara, Remoulade, Vodka Sauce
-            </p>
+            <p id="item-name">Sauce</p>
+            <p id="item-description">Any Dressing, Any Wing Sauce, Jalapeno Ketchup, Pesto, Texas Petal, Guacamole, Marinara, Remoulade, Vodka Sauce</p>
             <h3>$0.25 each</h3>
-            <p id="item-name">
-              Toppings
-            </p>
-            <p id="item-description">
-              Sauteed Onions, Sautted Mushrooms, Bacon, Chili, Roasted Red Peppers, Jalapenos, Sauteed Peppers, Pork Roll, Turkey Bacon
-            </p>
+            <p id="item-name">Toppings</p>
+            <p id="item-description">Sauteed Onions, Sautted Mushrooms, Bacon, Chili, Roasted Red Peppers, Jalapenos, Sauteed Peppers, Pork Roll, Turkey Bacon</p>
             <h3>$0.99 each</h3>
-            <p id="item-name">
-              "Award Winning" Turkey Burger
-            </p>
-            <p id="item-description">
-              Our handmade turkey burger on a toasted roll with cheddar, cranberry mustard, sweet onion, pickle chips & sliced mildly hot peppers
-            </p>
+            <p id="item-name">"Award Winning" Turkey Burger</p>
+            <p id="item-description">Our handmade turkey burger on a toasted roll with cheddar, cranberry mustard, sweet onion, pickle chips & sliced mildly hot peppers</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Ridiculous Burger
-            </p>
-            <p id="item-description">
-              Our half pound C.A.B. burger piled high with fresh potato chips, bacon, pork roll, thousand island dressing, fried egg, lettuce, tomato, onion, jalapenos & melted pepperjack cheese (No substitutions)
-            </p>
+            <p id="item-name">Ridiculous Burger</p>
+            <p id="item-description">Our half pound C.A.B. burger piled high with fresh potato chips, bacon, pork roll, thousand island dressing, fried egg, lettuce, tomato, onion, jalapenos & melted pepperjack cheese (No substitutions)</p>
             <h3>$11.99</h3>
           </div>
           <div id="pizza">
             <h2>Thin Crust Pizza</h2>
-            <p id="item-name">
-              Arugula & Prosciutto
-            </p>
-            <p id="item-description">
-              Red sauce, fresh mozzarella, baby arugula, prosciutto, shaved parmesan & balsamic trufle drizzle
-            </p>
+            <p id="item-name">Arugula & Prosciutto</p>
+            <p id="item-description">Red sauce, fresh mozzarella, baby arugula, prosciutto, shaved parmesan & balsamic trufle drizzle</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Margarita
-            </p>
-            <p id="item-description">
-              Red sauce, fresh mozzarella & fresh basil
-            </p>
+            <p id="item-name">Margarita</p>
+            <p id="item-description">Red sauce, fresh mozzarella & fresh basil</p>
             <h3>$8.99</h3>
-            <p id="item-name">
-              White Pie
-            </p>
-            <p id="item-description">
-              Three cheese blend, fresh ricotta & broccoli
-            </p>
+            <p id="item-name">White Pie</p>
+            <p id="item-description">Three cheese blend, fresh ricotta & broccoli</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Vodka Chicken
-            </p>
-            <p id="item-description">
-              Vodka sauce, three cheese blend & grilled chicken
-            </p>
+            <p id="item-name">Vodka Chicken</p>
+            <p id="item-description">Vodka sauce, three cheese blend & grilled chicken</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Build Your Own
-            </p>
-            <p id="item-description">
-              Our 10" thin crust pizza topped with a three cheese blend & your choice of toppings
-            </p>
+            <p id="item-name">Build Your Own</p>
+            <p id="item-description">Our 10" thin crust pizza topped with a three cheese blend & your choice of toppings</p>
             <h3>$7.99</h3>
-            <p id="item-name">
-              Toppings
-            </p>
-            <p id="item-description">
-              Pepperoni, Sausage, Bacon, Prosciutto, Chicken, Spinach, Ricotta, Arugula, Shaved Parmesan, Broccoli, Peppers, Onions, Mushrooms, Roasted Red Peppers, Crumbled Bleu Cheese, Fresh Basil, Vodka Sauce, Jalapenos, Buffalo Sauce
-            </p>
+            <p id="item-name">Toppings</p>
+            <p id="item-description">Pepperoni, Sausage, Bacon, Prosciutto, Chicken, Spinach, Ricotta, Arugula, Shaved Parmesan, Broccoli, Peppers, Onions, Mushrooms, Roasted Red Peppers, Crumbled Bleu Cheese, Fresh Basil, Vodka Sauce, Jalapenos, Buffalo Sauce</p>
             <h3>$0.99 each</h3>
           </div>
         </div>
@@ -148,52 +97,45 @@
   <div class="container">
     <div class="footer">
       <div style="position: relative" class="social">
-        <img style="position: absolute" src="images/Facebook_active.png">
-    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
-        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
-        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
-        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="f-active" src="images/Facebook_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" src="images/Yelp.png"></a>
       </div>
-      <div class="address">
-        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
-      </div>
-      <div class="contact">
-        <p>(609) 771-0100<br>info@firkintavern.com</p>
-      </div>
-      <div class="email">
-    <img style="position: absolute" src="images/Envelope_active.png">
-        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
-
-    <div id="openModal" class="modalDialog">
+      <p id="address">1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      <p id="contact">(609) 771-0100<br>info@firkintavern.com</p>
+      <a href="#openModal"><img id="e-active" src="images/Envelope_active.png"></a>
+      <a href="#openModal"><img id="envelope" src="images/Envelope.png"></a>
+      <div id="openModal" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
           <div id="page1" style="display: block">
-                <div class="modal-header">
-                    <h4 class="modal-title">Email Subscription</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="form">
-                      <div class="form-group">
-                        <label>Email Address:</label>
-                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
-                      </div>
-                      <div class="form-group">
-                        <label>First Name:</label>
-                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
-                      </div>
-                    </form>             
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
-                </div>
+            <div class="modal-header">
+              <h4 class="modal-title">Email Subscription</h4>
             </div>
-            <div id="page2" style="display: none">
-              <div class="modal-header">
-                    <h4 class="modal-title">Thank you for subscribing!</h4>
+            <div class="modal-body">
+              <form id="form">
+                <div class="form-group">
+                  <label>Email Address:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter email"/>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label>First Name:</label>
+                  <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                </div>
+              </form>             
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+            </div>
+          </div>
+          <div id="page2" style="display: none">
+            <div class="modal-header">
+              <h4 class="modal-title">Thank you for subscribing!</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>

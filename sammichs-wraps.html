@@ -8,35 +8,31 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="logo">
-        <img src="images/Firkin_Tavern_Logo.png">
-      </div>
-      <div class="title">
-        <img src="images/Firkin_Tavern_Title.png">
-      </div>
+      <img id="logo" src="images/Firkin_Tavern_Logo.png">
+      <img id="title" src="images/Firkin_Tavern_Title.png">
     </div>
   </div>
   <div class="container">
     <div id='nav'>
-    <ul style="margin: 0; padding: 0;">
-       <li><a href='index.html'><span>Home</span></a>
-       <li class='has-sub'><a href='#'><span>Specials</span></a>
-          <ul>
-             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
-             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
-             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
-          </ul>
-       <li class='has-sub' style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Menus</span></a>
-          <ul>
-             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
-             <li><a href='beer-list.html'><span>Beer List</span></a></li>
-             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
-             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
-             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
-          </ul>
-       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
-    </ul>
-  </div>
+      <ul style="margin: 0; padding: 0;">
+        <li><a href='index.html'><span>Home</span></a>
+        <li class='has-sub'><a href='#' onclick="dropdownSpecials()"><span>Specials</span></a>
+        <ul id="specials">
+          <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+          <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+          <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+        </ul>
+        <li style="background-color: #4D2702" class='has-sub'><a href='#' style="color: #D2D50B" onclick="dropdownMenus()"><span>Menus</span></a>
+        <ul id="menus">
+          <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+          <li><a href='beer-list.html'><span>Beer List</span></a></li>
+          <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+          <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+          <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+        </ul>
+        <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+      </ul>
+    </div>
   </div>
   <div class="container">
     <div class="body">
@@ -55,140 +51,64 @@
           <h2>Sammichs & Wraps</h2>
           <h3>Includes fries, pickle & cole slaw<br/>Substitute mac-n-cheese, onion rings, cajun fries, or sweet potato fries for $1.49</h3>
           <div id="sammichs">
-            <p id="item-name">
-              Firkin Fish Tacos
-            </p>
-            <p id="item-description">
-              Your choice of grilled or beer battered cod fried golden brown, served in warm tortillas with pico de gallo, green onion, mixed cheeses, cabbage & spicy avocado cream sauce
-            </p>
+            <p id="item-name">Firkin Fish Tacos</p>
+            <p id="item-description">Your choice of grilled or beer battered cod fried golden brown, served in warm tortillas with pico de gallo, green onion, mixed cheeses, cabbage & spicy avocado cream sauce</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Corned Beef Reuben
-            </p>
-            <p id="item-description">
-              Hot corned beef on grilled rye bread with saurkraut, thousand island dressing & swiss cheese
-            </p>
+            <p id="item-name">Corned Beef Reuben</p>
+            <p id="item-description">Hot corned beef on grilled rye bread with saurkraut, thousand island dressing & swiss cheese</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              New York Strip Sammich
-            </p>
-            <p id="item-description">
-              A C.A.B. NY strip steak sammich topped with your choice of peppers, onions, mushrooms & cheese
-            </p>
+            <p id="item-name">New York Strip Sammich</p>
+            <p id="item-description">A C.A.B. NY strip steak sammich topped with your choice of peppers, onions, mushrooms & cheese</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Chicken Fajita Wrap
-            </p>
-            <p id="item-description">
-              Grilled chicken, peppers, onions & mixed cheese, served with salsa, sour cream & guacamole
-            </p>
+            <p id="item-name">Chicken Fajita Wrap</p>
+            <p id="item-description">Grilled chicken, peppers, onions & mixed cheese, served with salsa, sour cream & guacamole</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Pork Roll Sammich
-            </p>
-            <p id="item-description">
-              Thick-cut pork roll, grilled with your choice of cheese, served on a fresh roll
-            </p>
+            <p id="item-name">Pork Roll Sammich</p>
+            <p id="item-description">Thick-cut pork roll, grilled with your choice of cheese, served on a fresh roll</p>
             <h3>$8.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a fried egg for $1</h3>
-            <p id="item-name">
-              Italian Roast Sammich
-            </p>
-            <p id="item-description">
-              Your choice of slow roasted turkey, beef or pork simmered in au jus, served with sharp provolone & your choice of broccoli rabe or spinach
-            </p>
+            <p id="item-name">Italian Roast Sammich</p>
+            <p id="item-description">Your choice of slow roasted turkey, beef or pork simmered in au jus, served with sharp provolone & your choice of broccoli rabe or spinach</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              French Dip
-            </p>
-            <p id="item-description">
-              Tender roast beef piled high on a warm garlic toasted roll & served with a cup of au jus for dipping
-            </p>
+            <p id="item-name">French Dip</p>
+            <p id="item-description">Tender roast beef piled high on a warm garlic toasted roll & served with a cup of au jus for dipping</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Chicken Pretzel Sammich
-            </p>
-            <p id="item-description">
-              Fresh grilled chicken breast topped with cheddar, ranch & bacon served on a soft pretzel bun
-            </p>
+            <p id="item-name">Chicken Pretzel Sammich</p>
+            <p id="item-description">Fresh grilled chicken breast topped with cheddar, ranch & bacon served on a soft pretzel bun</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Meatball Parm Sammich
-            </p>
-            <p id="item-description">
-              Homemade beef & pork meatballs topped with marinara, melted homemade mozzarella & grated parmesan cheese on a toasted long roll
-            </p>
+            <p id="item-name">Meatball Parm Sammich</p>
+            <p id="item-description">Homemade beef & pork meatballs topped with marinara, melted homemade mozzarella & grated parmesan cheese on a toasted long roll</p>
             <h3>$8.99</h3>
           </div>
           <div id="wraps">
-            <p id="item-name">
-              Buffalo Chicken Wrap
-            </p>
-            <p id="item-description">
-              Spicy buffalo chicken fingers, celery, lettuce, tomato & bleu cheese stuffed in a flour tortilla & grilled
-            </p>
+            <p id="item-name">Buffalo Chicken Wrap</p>
+            <p id="item-description">Spicy buffalo chicken fingers, celery, lettuce, tomato & bleu cheese stuffed in a flour tortilla & grilled</p>
             <h3>$8.99</h3>
-            <p id="item-name">
-              Crab Cake Sammich
-            </p>
-            <p id="item-description">
-              Our housemade pan fried jumbo lump crab cake topped with a remoulade sauce & served on a kaiser roll
-            </p>
+            <p id="item-name">Crab Cake Sammich</p>
+            <p id="item-description">Our housemade pan fried jumbo lump crab cake topped with a remoulade sauce & served on a kaiser roll</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Italian Chicken Sammich
-            </p>
-            <p id="item-description">
-              Grilled chicken, homemade fresh mozzarella, prosciutto, roasted peppers & balsamic truffle drizzle on a kaiser roll
-            </p>
+            <p id="item-name">Italian Chicken Sammich</p>
+            <p id="item-description">Grilled chicken, homemade fresh mozzarella, prosciutto, roasted peppers & balsamic truffle drizzle on a kaiser roll</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Turkey Avocado Sammich
-            </p>
-            <p id="item-description">
-              House roasted turkey topped with turkey bacon, arugula, tomato, avocado & ranch on a long roll
-            </p>
+            <p id="item-name">Turkey Avocado Sammich</p>
+            <p id="item-description">House roasted turkey topped with turkey bacon, arugula, tomato, avocado & ranch on a long roll</p>
             <h3>$10.99</h3>
-            <p id="item-name">
-              Philly Cheesesteak Wrap or Sammich
-            </p>
-            <p id="item-description">
-              Served with your choice of cheese & peppers, mushrooms and/or onions
-            </p>
+            <p id="item-name">Philly Cheesesteak Wrap or Sammich</p>
+            <p id="item-description">Served with your choice of cheese & peppers, mushrooms and/or onions</p>
             <h3>$8.99</h3>
-            <p id="item-name">
-              Carolina Pulled Pork Sammich
-            </p>
-            <p id="item-description">
-              Slow cooked pulled pork in a Carolina BBQ sauce topped with cole slaw on a kaiser roll
-            </p>
+            <p id="item-name">Carolina Pulled Pork Sammich</p>
+            <p id="item-description">Slow cooked pulled pork in a Carolina BBQ sauce topped with cole slaw on a kaiser roll</p>
             <h3>$8.99</h3>
-            <p id="item-name">
-              Ultimate Ham & Cheese Sammich
-            </p>
-            <p id="item-description">
-              Grilled rye bread with melted swiss, cheddar, american & provolone cheeses, tomato & ham. With your choice of fries or soup du jour
-            </p>
+            <p id="item-name">Ultimate Ham & Cheese Sammich</p>
+            <p id="item-description">Grilled rye bread with melted swiss, cheddar, american & provolone cheeses, tomato & ham. With your choice of fries or soup du jour</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Vodka Chicken Sammich
-            </p>
-            <p id="item-description">
-              Panko breaded chicken cutlet topped with our vodka sauce, prosciutto & melted provolone on a long roll
-            </p>
+            <p id="item-name">Vodka Chicken Sammich</p>
+            <p id="item-description">Panko breaded chicken cutlet topped with our vodka sauce, prosciutto & melted provolone on a long roll</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Firkin Cuban Sammich
-            </p>
-            <p id="item-description">
-              Our house roasted pork, smoked ham, Swiss cheese, pickles & spicy mustard on a pressed long roll
-            </p>
+            <p id="item-name">Firkin Cuban Sammich</p>
+            <p id="item-description">Our house roasted pork, smoked ham, Swiss cheese, pickles & spicy mustard on a pressed long roll</p>
             <h3>$9.99</h3>
-            <p id="item-name">
-              Italian Sausage Sammich
-            </p>
-            <p id="item-description">
-              Fresh housemade Italian sausage on a long roll with peppers, onions & a little marinara
-            </p>
+            <p id="item-name">Italian Sausage Sammich</p>
+            <p id="item-description">Fresh housemade Italian sausage on a long roll with peppers, onions & a little marinara</p>
             <h3>$8.99</h3>
           </div>
         </div>
@@ -198,52 +118,45 @@
   <div class="container">
     <div class="footer">
       <div style="position: relative" class="social">
-        <img style="position: absolute" src="images/Facebook_active.png">
-    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
-        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
-        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
-        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="f-active" src="images/Facebook_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" src="images/Yelp.png"></a>
       </div>
-      <div class="address">
-        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
-      </div>
-      <div class="contact">
-        <p>(609) 771-0100<br>info@firkintavern.com</p>
-      </div>
-      <div class="email">
-    <img style="position: absolute" src="images/Envelope_active.png">
-        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
-
-    <div id="openModal" class="modalDialog">
+      <p id="address">1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      <p id="contact">(609) 771-0100<br>info@firkintavern.com</p>
+      <a href="#openModal"><img id="e-active" src="images/Envelope_active.png"></a>
+      <a href="#openModal"><img id="envelope" src="images/Envelope.png"></a>
+      <div id="openModal" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
           <div id="page1" style="display: block">
-                <div class="modal-header">
-                    <h4 class="modal-title">Email Subscription</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="form">
-                      <div class="form-group">
-                        <label>Email Address:</label>
-                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
-                      </div>
-                      <div class="form-group">
-                        <label>First Name:</label>
-                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
-                      </div>
-                    </form>             
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
-                </div>
+            <div class="modal-header">
+              <h4 class="modal-title">Email Subscription</h4>
             </div>
-            <div id="page2" style="display: none">
-              <div class="modal-header">
-                    <h4 class="modal-title">Thank you for subscribing!</h4>
+            <div class="modal-body">
+              <form id="form">
+                <div class="form-group">
+                  <label>Email Address:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter email"/>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label>First Name:</label>
+                  <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                </div>
+              </form>             
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+            </div>
+          </div>
+          <div id="page2" style="display: none">
+            <div class="modal-header">
+              <h4 class="modal-title">Thank you for subscribing!</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,35 +8,31 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="logo">
-        <img src="images/Firkin_Tavern_Logo.png">
-      </div>
-      <div class="title">
-        <img src="images/Firkin_Tavern_Title.png">
-      </div>
+      <img id="logo" src="images/Firkin_Tavern_Logo.png">
+      <img id="title" src="images/Firkin_Tavern_Title.png">
     </div>
   </div>
   <div class="container">
     <div id='nav'>
-    <ul style="margin: 0; padding: 0;">
-       <li><a href='index.html'><span>Home</span></a>
-       <li class='has-sub'><a href='#'><span>Specials</span></a>
-          <ul>
-             <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
-             <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
-             <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
-          </ul>
-       <li class='has-sub'style="background-color: #4D2702"><a href='#' style="color: #D2D50B"><span>Menus</span></a>
-          <ul>
-             <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
-             <li><a href='beer-list.html'><span>Beer List</span></a></li>
-             <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
-             <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
-             <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
-          </ul>
-       <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
-    </ul>
-  </div>
+      <ul style="margin: 0; padding: 0;">
+        <li><a href='index.html'><span>Home</span></a>
+        <li class='has-sub'><a href='#' onclick="dropdownSpecials()"><span>Specials</span></a>
+        <ul id="specials">
+          <li><a href='current-food-specials.html'><span>Current Food Specials</span></a></li>
+          <li><a href='bar-specials.html'><span>Bar Specials</span></a></li>
+          <li class='last'><a href='dinner-specials.html'><span>Dinner Specials</span></a></li>
+        </ul>
+        <li style="background-color: #4D2702" class='has-sub'><a href='#' style="color: #D2D50B" onclick="dropdownMenus()"><span>Menus</span></a>
+        <ul id="menus">
+          <li><a href='lunch-dinner.html'><span>Lunch & Dinner</span></a></li>
+          <li><a href='beer-list.html'><span>Beer List</span></a></li>
+          <li><a href='appetizer-buffet.html'><span>Appetizer Buffet</span></a></li>
+          <li><a href='entree-buffet.html'><span>Entree Buffet</span></a></li>
+          <li class='last'><a href='take-out-catering.html'><span>Take Out Catering</span></a></li>
+        </ul>
+        <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
+      </ul>
+    </div>
   </div>
   <div class="container">
     <div class="body">
@@ -46,36 +42,22 @@
           <h2>Trays for 25 people<br/>Tax not included</h2>
           <div id="ent1">
             <h3>Pasta</h3>
-            <p id="food">
-              Vodka Rigatoni <b>$64.99</b><br/>Baked Pencil Points <b>$64.99</b><br/>Fettuccine Alfredo <b>$64.99</b><br/>Pasta Marinara <b>$54.99</b><br/>Tortellini Alfredo <b>$64.99</b><br/>Meat Lasagna <b>$79.99</b><br/>Vegetable Lasagna <b>$69.99</b><br/>Pasta Primavera <b>$59.99</b><br/>Ridiculous Macaroni & Cheese <b>$84.99</b><br/>Macaroni & Cheese <b>$64.99</b>
-            </p>
+            <p id="food">Vodka Rigatoni <b>$64.99</b><br/>Baked Pencil Points <b>$64.99</b><br/>Fettuccine Alfredo <b>$64.99</b><br/>Pasta Marinara <b>$54.99</b><br/>Tortellini Alfredo <b>$64.99</b><br/>Meat Lasagna <b>$79.99</b><br/>Vegetable Lasagna <b>$69.99</b><br/>Pasta Primavera <b>$59.99</b><br/>Ridiculous Macaroni & Cheese <b>$84.99</b><br/>Macaroni & Cheese <b>$64.99</b></p>
             <h3>Fish</h3>
-            <p id="food">
-              Fish & Chips <b>$84.99</b><br/>Fried Flounder <b>$89.99</b><br/>Shrimp Stir Fry (Bay) <b>$84.99</b><br/>Shrimp Stir Fry (Jumbo) <b>$154.99</b><br/>Seafood Jambalaya (Bay) <b>$114.99</b><br/>Maryland Crab Cakes <b>$109.99</b><br/>Cajun Beer Shrimp <b>$129.99</b>
-            </p>
+            <p id="food">Fish & Chips <b>$84.99</b><br/>Fried Flounder <b>$89.99</b><br/>Shrimp Stir Fry (Bay) <b>$84.99</b><br/>Shrimp Stir Fry (Jumbo) <b>$154.99</b><br/>Seafood Jambalaya (Bay) <b>$114.99</b><br/>Maryland Crab Cakes <b>$109.99</b><br/>Cajun Beer Shrimp <b>$129.99</b></p>
             <h3>Salads</h3>
-            <p id="food">
-              Tossed <b>$29.99</b><br/>Chopped Antipasto <b>$45.99</b><br/>Spinach <b>$39.99</b><br/>Chopped Chef Special <b>$45.99</b><br/>Fruit Salad <b>$49.99</b><br/>Cobb Salad with Chicken <b>$49.99</b><br/>Buffalo Chicken Salad <b>$49.99</b><br/>Tomato, Mozzarella & Basil <b>$49.99</b>
-            </p>
+            <p id="food">Tossed <b>$29.99</b><br/>Chopped Antipasto <b>$45.99</b><br/>Spinach <b>$39.99</b><br/>Chopped Chef Special <b>$45.99</b><br/>Fruit Salad <b>$49.99</b><br/>Cobb Salad with Chicken <b>$49.99</b><br/>Buffalo Chicken Salad <b>$49.99</b><br/>Tomato, Mozzarella & Basil <b>$49.99</b></p>
           </div>
           <div id="ent2">
             <h3>Chicken</h3>
-            <p id="food">
-              Chicken Marsala <b>$94.99</b><br/>Chicken O'Brian <b>$94.99</b><br/>Chicken Piccatta <b>$94.99</b><br/>Honey Sesame Chicken <b>$94.99</b><br/>Smothered Chicken <b>$94.99</b><br/>Chicken Parmesan <b>$94.99</b><br/>Pecan Chicken with Honey Lemon Sauce <b>$104.99</b><br/>Bone-in Chicken Cacciatore <b>$84.99</b><br/>Boneless (All Breast) Cacciatore <b>$94.99</b><br/>Chicken Wellington <b>$104.99</b>
-            </p>
+            <p id="food">Chicken Marsala <b>$94.99</b><br/>Chicken O'Brian <b>$94.99</b><br/>Chicken Piccatta <b>$94.99</b><br/>Honey Sesame Chicken <b>$94.99</b><br/>Smothered Chicken <b>$94.99</b><br/>Chicken Parmesan <b>$94.99</b><br/>Pecan Chicken with Honey Lemon Sauce <b>$104.99</b><br/>Bone-in Chicken Cacciatore <b>$84.99</b><br/>Boneless (All Breast) Cacciatore <b>$94.99</b><br/>Chicken Wellington <b>$104.99</b></p>
             <h3>Beef</h3>
-            <p id="food">
-              Roast Beef & Gravy <b>$84.99</b><br/>Marinated Flank Steak <b>$114.99</b><br/>Rib-Eye Steaks <b>Market</b><br/>NY Strip Steaks <b>Market</b><br/>8 oz. Burgers <b>Market</b><br/>1/4 lb. Hot Dogs <b>Market</b><br/>Shepherd's Pie <b>$74.99</b><br/>Prime Rib <b>Market</b><br/>Meatloaf & Gravy <b>$74.99</b>
-            </p>
+            <p id="food">Roast Beef & Gravy <b>$84.99</b><br/>Marinated Flank Steak <b>$114.99</b><br/>Rib-Eye Steaks <b>Market</b><br/>NY Strip Steaks <b>Market</b><br/>8 oz. Burgers <b>Market</b><br/>1/4 lb. Hot Dogs <b>Market</b><br/>Shepherd's Pie <b>$74.99</b><br/>Prime Rib <b>Market</b><br/>Meatloaf & Gravy <b>$74.99</b></p>
             <h3>Vegetables</h3>
-            <p id="food">
-              Sauteed Mixed <b>$35.99</b><br/>Steamed Broccoli <b>$35.99</b><br/>Baked Potato <b>$35.99</b><br/>Smashed Cheddar Potato <b>$39.99</b><br/>Rice Pilaf <b>$39.99</b>
-            </p>
+            <p id="food">Sauteed Mixed <b>$35.99</b><br/>Steamed Broccoli <b>$35.99</b><br/>Baked Potato <b>$35.99</b><br/>Smashed Cheddar Potato <b>$39.99</b><br/>Rice Pilaf <b>$39.99</b></p>
           </div>
           <h3>Appetizers</h3>
-            <p id="food">
-              Wings <b>$79.99</b><br/>Stuffed Mushromms with Crabmeat <b>$89.99</b><br/>Artichoke & Spinach Dip with Chips <b>$110.99</b><br/>Steamers with Garlic Butter <b>$79.99</b><br/>Mussells Marinara or Fra Diavlo <b>$85.99</b>
-            </p>
+            <p id="food">Wings <b>$79.99</b><br/>Stuffed Mushromms with Crabmeat <b>$89.99</b><br/>Artichoke & Spinach Dip with Chips <b>$110.99</b><br/>Steamers with Garlic Butter <b>$79.99</b><br/>Mussells Marinara or Fra Diavlo <b>$85.99</b></p>
         </div>
       </div>
     </div>
@@ -83,52 +65,45 @@
   <div class="container">
     <div class="footer">
       <div style="position: relative" class="social">
-        <img style="position: absolute" src="images/Facebook_active.png">
-    <img style="position: absolute; left: 76px;" src="images/Twitter_active.png">
-        <img style="position: absolute; left: 152px;" src="images/Yelp_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" style="position: relative" src="images/Facebook.png"></a>
-        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" style="position: relative" src="images/Twitter.png"></a>
-        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" style="position: relative" src="images/Yelp.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="f-active" src="images/Facebook_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" src="images/Facebook.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" src="images/Twitter.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" src="images/Yelp.png"></a>
       </div>
-      <div class="address">
-        <p>1400 Parkway Ave.<br>Ewing, NJ 08638</p>
-      </div>
-      <div class="contact">
-        <p>(609) 771-0100<br>info@firkintavern.com</p>
-      </div>
-      <div class="email">
-    <img style="position: absolute" src="images/Envelope_active.png">
-        <a href="#openModal"><img id="envelope" style="position: relative" src="images/Envelope.png"></a>
-
-    <div id="openModal" class="modalDialog">
+      <p id="address">1400 Parkway Ave.<br>Ewing, NJ 08638</p>
+      <p id="contact">(609) 771-0100<br>info@firkintavern.com</p>
+      <a href="#openModal"><img id="e-active" src="images/Envelope_active.png"></a>
+      <a href="#openModal"><img id="envelope" src="images/Envelope.png"></a>
+      <div id="openModal" class="modalDialog">
         <div>
           <a href="#close" title="Close" class="close" onclick="changeBack()">X</a>
           <div id="page1" style="display: block">
-                <div class="modal-header">
-                    <h4 class="modal-title">Email Subscription</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="form">
-                      <div class="form-group">
-                        <label>Email Address:</label>
-                          <input type="email" id="email" class="form-control" placeholder="Enter email"/>
-                      </div>
-                      <div class="form-group">
-                        <label>First Name:</label>
-                          <input type="name" id="name" class="form-control" placeholder="Enter name"/>
-                      </div>
-                    </form>             
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
-                </div>
+            <div class="modal-header">
+              <h4 class="modal-title">Email Subscription</h4>
             </div>
-            <div id="page2" style="display: none">
-              <div class="modal-header">
-                    <h4 class="modal-title">Thank you for subscribing!</h4>
+            <div class="modal-body">
+              <form id="form">
+                <div class="form-group">
+                  <label>Email Address:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter email"/>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label>First Name:</label>
+                  <input type="name" id="name" class="form-control" placeholder="Enter name"/>
+                </div>
+              </form>             
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="changeContent()">Submit</button>
+            </div>
+          </div>
+          <div id="page2" style="display: none">
+            <div class="modal-header">
+              <h4 class="modal-title">Thank you for subscribing!</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
