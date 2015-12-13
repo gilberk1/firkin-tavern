@@ -1361,6 +1361,7 @@ p#monthly-description {
 		background-color: #553A1F;
 		position: relative;
 		margin: 0;
+		padding: 0;
 	}
 
 	.mobile-social {
@@ -1459,7 +1460,7 @@ p#monthly-description {
 	    pointer-events: auto;
 	}
 	.mobile-modalDialog > div {
-	    width: 80%;
+	    width: 70%;
 	    position: relative;
 	    margin: 30% auto;
 	    padding: 20px 30px 20px 30px;
