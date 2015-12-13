@@ -1043,6 +1043,9 @@ p#food {
 		background-color: #553A1F;
 		position: relative;
 		margin: 0;
+		overflow-y: hidden;
+		padding: 0;
+		padding-bottom: 50px;
 	}
 
 	.mobile-social {
@@ -1141,10 +1144,10 @@ p#food {
 	    pointer-events: auto;
 	}
 	.mobile-modalDialog > div {
-	    width: 80%;
+	    width: 70%;
 	    position: relative;
-	    margin: 30% auto;
-	    padding: 20px 30px 20px 30px;
+	    margin: 25% auto;
+	    padding: 10px 30px 10px 30px;
 	    border: black 5px solid;
 	    border-radius: 10px;
 	    background: #EBEBEB;

@@ -770,11 +770,15 @@ h3 {
 	body {
 		background-image: none;
 	}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
 
 	.header{
 		width: 100%;
 		background-color: #553A1F;
-		height: 130px;
+		height: 100px;
 		position: relative;
 	}
 
@@ -782,10 +786,10 @@ h3 {
 		display: block;
 		margin:0;
 		float: left;
-		width: 105px;
-		height: 116.9px;
-		padding-top: 5px;
-		padding-left: 50px;
+		width: 75px;
+		height: 83.5px;
+		padding-top: 7px;
+		padding-left: 40px;
 	}
 
 	#title {
@@ -798,8 +802,8 @@ h3 {
 		float: right;
 		padding-top: 20px;
 		padding-right: 40px;
-		width: 85.68px;
-		height: 82.32px;
+		width: 61.2px;
+		height: 58.8px;
 	}
 
 	#nav {
@@ -1174,6 +1178,9 @@ h3 {
 		background-color: #553A1F;
 		position: relative;
 		margin: 0;
+		overflow-y: hidden;
+		padding: 0;
+		padding-bottom: 50px;
 	}
 
 	.mobile-social {
@@ -1272,10 +1279,10 @@ h3 {
 	    pointer-events: auto;
 	}
 	.mobile-modalDialog > div {
-	    width: 80%;
+	    width: 70%;
 	    position: relative;
-	    margin: 30% auto;
-	    padding: 20px 30px 20px 30px;
+	    margin: 25% auto;
+	    padding: 10px 30px 10px 30px;
 	    border: black 5px solid;
 	    border-radius: 10px;
 	    background: #EBEBEB;
