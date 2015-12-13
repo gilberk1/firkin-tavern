@@ -594,7 +594,7 @@ p#item-description {
 	}
 
 	h3 {
-		font-size: 16pt;
+		font-size: 15pt;
 		text-align: center;
 		margin: 0;
 		padding: 0;
@@ -603,7 +603,7 @@ p#item-description {
 
 	p#item-name{
 		font-weight: 500;
-		font-size: 15pt;
+		font-size: 16pt;
 		text-align: center;
 		margin: 0;
 		margin-bottom: 3.2px;
