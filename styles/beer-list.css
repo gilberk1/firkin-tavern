@@ -582,9 +582,9 @@ p#beer {
 		padding: 0;
 	}
 
-
 	.footer {
 		height: 64px;
+		padding-bottom: 20px;
 	}
 
 	.social {
