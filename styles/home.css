@@ -791,9 +791,7 @@ p#monthly-description {
 	}
 
 	.footer {
-		height: 64px;/*
-		overflow-y: hidden;
-		padding-bottom: 50px;*/
+		height: 64px;
 	}
 
 	.social {
@@ -1222,8 +1220,8 @@ p#monthly-description {
 	  	padding: 0;
 	  	margin: 0 auto;
 	  	margin-top: 10px;
-	  	width: 360px;
-	  	height: 127.5px;
+	  	width: 95%;
+	  	height: auto;
 	  	background: #3C3E40;
 	}
 
@@ -1269,6 +1267,10 @@ p#monthly-description {
 	}
 
 	.cal-today a {
+	  	color: white;
+	  	background: #83861D;
+	}
+	.cal-today a:hover {
 	  	color: white;
 	  	background: #83861D;
 	}
