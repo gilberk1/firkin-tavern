@@ -8,8 +8,9 @@
 <body>
   <div class="container">
     <div class="header">
-      <img id="logo" src="images/Firkin_Tavern_Logo.png">
+      <a href="index.html"><img id="logo" src="images/Firkin_Tavern_Logo.png">
       <img id="title" src="images/Firkin_Tavern_Title.png">
+      <img id="hamburger" src="images/Hamburger_icon.png" onclick="dropdownMenu()">
     </div>
   </div>
   <div class="container">
@@ -33,9 +34,32 @@
         <li class='last'><a href='id-policy.html'><span>ID Policy</span></a>
       </ul>
     </div>
+    <div id='nav-mobile'>
+      <ul>
+        <li class="dropdown"><a href="index.html"><span>Home</span></a>
+        <li class="dropdown"><a href="#" onclick="dropdownMobileSpecials()"><span>Specials</span></a>
+          <ul id="dropdown-specials">
+            <li><a href="current-food-specials.html"><span>Current Food Specials</span></a></li>
+            <li><a href="bar-specials.html"><span>Bar Specials</span></a></li>
+            <li><a href="dinner-specials.html"><span>Dinner Specials</span></a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" onclick="dropdownMobileMenus()"><span>Menus</span></a>
+          <ul id="dropdown-menus">
+            <li><a href="lunch-dinner.html"><span>Lunch & Dinner</span></a></li>
+            <li><a href="beer-list.html"><span>Beer List</span></a></li>
+            <li><a href="appetizer-buffet.html"><span>Appetizer Buffet</span></a></li>
+            <li><a href="entree-buffet.html"><span>Entree Buffet</span></a></li>
+            <li><a href="take-out-catering.html"><span>Take Out Catering</span></a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="id-policy.html"><span>ID Policy</span></a>
+      </ul>
+    </div>
   </div>
   <div class="container">
     <div class="body">
+      <img id="mobile-title" src="images/Firkin_Tavern_Title.png">
       <div class="body-content">
         <h1>Take Out Catering Menu</h1>
         <div id="food-content">
@@ -56,8 +80,10 @@
             <h3>Vegetables</h3>
             <p id="food">Sauteed Mixed <b>$35.99</b><br/>Steamed Broccoli <b>$35.99</b><br/>Baked Potato <b>$35.99</b><br/>Smashed Cheddar Potato <b>$39.99</b><br/>Rice Pilaf <b>$39.99</b></p>
           </div>
-          <h3>Appetizers</h3>
-            <p id="food">Wings <b>$79.99</b><br/>Stuffed Mushromms with Crabmeat <b>$89.99</b><br/>Artichoke & Spinach Dip with Chips <b>$110.99</b><br/>Steamers with Garlic Butter <b>$79.99</b><br/>Mussells Marinara or Fra Diavlo <b>$85.99</b></p>
+          <div id="app">
+            <h3>Appetizers</h3>
+              <p id="food">Wings <b>$79.99</b><br/>Stuffed Mushromms with Crabmeat <b>$89.99</b><br/>Artichoke & Spinach Dip with Chips <b>$110.99</b><br/>Steamers with Garlic Butter <b>$79.99</b><br/>Mussells Marinara or Fra Diavlo <b>$85.99</b></p>
+            </div>
         </div>
       </div>
     </div>
@@ -66,8 +92,8 @@
     <div class="footer">
       <div style="position: relative" class="social">
         <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="f-active" src="images/Facebook_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
-        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="t-active" src="images/Twitter_active.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="y-active" src="images/Yelp_active.png"></a>
         <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="facebook" src="images/Facebook.png"></a>
         <a href="https://twitter.com/firkintavern" target="_blank"><img id="twitter" src="images/Twitter.png"></a>
         <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="yelp" src="images/Yelp.png"></a>
@@ -102,6 +128,46 @@
           <div id="page2" style="display: none">
             <div class="modal-header">
               <h4 class="modal-title">Thank you for subscribing!</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-footer">
+      <p id="mobile-address">1400 Parkway Ave, Ewing, NJ 08638</p>
+      <p id="mobile-contact">(609) 771-0100<br>info@firkintavern.com</p>
+      <div class="mobile-social">
+        <a href="https://www.facebook.com/firkin-tavern-104433650784/?fref=ts" target="_blank"><img id="mobile-facebook" src="images/Facebook_active.png"></a>
+        <a href="https://twitter.com/firkintavern" target="_blank"><img id="mobile-twitter" src="images/Twitter_active.png"></a>
+        <a href="http://www.yelp.com/biz/the-firkin-tavern-ewing" target="_blank"><img id="mobile-yelp" src="images/Yelp_active.png"></a>
+      </div>
+      <a href="#mobile-openModal"><img id="e-active" src="images/Envelope_active.png"></a>
+      <div id="mobile-openModal" class="mobile-modalDialog">
+        <div>
+          <a href="#mobile-close" title="Close" class="mobile-close" onclick="changeMobileBack()">X</a>
+          <div id="mobile-page1" style="display: block">
+            <div class="mobile-modal-header">
+              <h4 class="modal-title">Email Subscription</h4>
+            </div>
+            <div class="mobile-modal-body">
+              <form id="form">
+                <div class="mobile-form-group">
+                  <label>Email Address:</label>
+                  <input type="email" id="email" class="mobile-form-control" placeholder="Enter email"/>
+                </div>
+                <div class="mobile-form-group">
+                  <label>First Name:</label>
+                  <input type="name" id="name" class="mobile-form-control" placeholder="Enter name"/>
+                </div>
+              </form>             
+            </div>
+            <div class="mobile-modal-footer">
+              <button type="button" class="mobile-btn mobile-btn-primary" onclick="changeMobileContent()">Submit</button>
+            </div>
+          </div>
+          <div id="mobile-page2" style="display: none">
+            <div class="mobile-modal-header">
+              <h4 class="mobile-modal-title">Thank you for subscribing!</h4>
             </div>
           </div>
         </div>
