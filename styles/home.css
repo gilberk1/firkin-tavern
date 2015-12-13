@@ -791,7 +791,9 @@ p#monthly-description {
 	}
 
 	.footer {
-		height: 64px;
+		height: 64px;/*
+		overflow-y: hidden;
+		padding-bottom: 50px;*/
 	}
 
 	.social {
