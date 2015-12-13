@@ -1,40 +1,6 @@
-// (function(){
-//   var hamburger = document.getElementById('navIcon');
-//   var menu = document.getElementById('menu');
+/* Navigation Javscript */
 
-//   hamburger.addEventListener("click", function(){
-//     if(menu.classList.contains('shown')) {
-//       menu.classList.remove('shown')
-//     } else {
-//       menu.classList.add('shown')
-//     }
-//   });
-
-// })();
-
-function dropdownSpecials() {
-	document.getElementById('specials').style.display = "block";
-	document.getElementById('menus').style.display = "none";
-}
-
-function dropdownMenus() {
-	document.getElementById('specials').style.display = "none";
-	document.getElementById('menus').style.display = "block";
-}
-
-function changeContent() {
-	document.getElementById('page1').style.display = "none";
-	document.getElementById('page2').style.display = "block";
-	document.getElementById('email').value = '';
-	document.getElementById('name').value = '';
-}
-
-function changeBack() {
-	setTimeout(function() {
-		document.getElementById('page1').style.display = "block";
-		document.getElementById('page2').style.display = "none";
-	}, 1000);
-}
+/* ALL */
 
 function addEvent(clicked_id) {
 	if(clicked_id == "1")
@@ -315,4 +281,102 @@ function addEvent(clicked_id) {
 		date.innerHTML = "December 31, 2015";
 		description.innerHTML = "";
 	}
+}
+
+
+/* Desktop & Tablet */
+
+function dropdownSpecials() {
+	document.getElementById('specials').style.display = "block";
+	document.getElementById('menus').style.display = "none";
+}
+
+function dropdownMenus() {
+	document.getElementById('specials').style.display = "none";
+	document.getElementById('menus').style.display = "block";
+}
+
+function changeContent() {
+	document.getElementById('page1').style.display = "none";
+	document.getElementById('page2').style.display = "block";
+	document.getElementById('email').value = '';
+	document.getElementById('name').value = '';
+}
+
+function changeBack() {
+	setTimeout(function() {
+		document.getElementById('page1').style.display = "block";
+		document.getElementById('page2').style.display = "none";
+	}, 1000);
+}
+
+/* Mobile */
+
+function dropdownMenu() {
+	var menu = document.getElementById('nav-mobile');
+
+	if (!menu.classList.contains('show'))
+	{
+        menu.classList.add('show');
+        menu.classList.remove('hide');
+        event.preventDefault();
+    }
+    else
+    {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+        event.preventDefault();
+    }
+}
+
+function dropdownMobileSpecials() {
+	var menu = document.getElementById('dropdown-specials');
+	var other = document.getElementById('dropdown-menus');
+
+	if (!menu.classList.contains('show'))
+	{
+        menu.classList.add('show');
+        menu.classList.remove('hide');
+        other.classList.remove('show');
+        event.preventDefault();
+    }
+    else
+    {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+        event.preventDefault();
+    }
+}
+
+function dropdownMobileMenus() {
+	var menu = document.getElementById('dropdown-menus');
+	var other = document.getElementById('dropdown-specials');
+
+	if (!menu.classList.contains('show'))
+	{
+        menu.classList.add('show');
+        menu.classList.remove('hide');
+        other.classList.remove('show');
+        event.preventDefault();
+    }
+    else
+    {
+        menu.classList.remove('show');
+        menu.classList.add('hide');
+        event.preventDefault();
+    }
+}
+
+function changeMobileContent() {
+	document.getElementById('mobile-page1').style.display = "none";
+	document.getElementById('mobile-page2').style.display = "block";
+	document.getElementById('email').value = '';
+	document.getElementById('name').value = '';
+}
+
+function changeMobileBack() {
+	setTimeout(function() {
+		document.getElementById('mobile-page1').style.display = "block";
+		document.getElementById('mobile-page2').style.display = "none";
+	}, 1000);
 }
