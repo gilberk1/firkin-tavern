@@ -18,3 +18,7 @@ HTML, CSS, JavaScript
 
 - [Live demo](https://gilberk1.github.io/firkin-tavern/)
 - [Full case study](https://webdevmagic.com/firkin-tavern)
+
+## Status
+
+Archived student project; shared as a record of the work.
